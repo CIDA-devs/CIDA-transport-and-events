@@ -17,7 +17,7 @@ function carousel() {
         {/* carousel video for events */}
         <div className="relative">
           <video
-            className="w-full object-cover h-[80vh]"
+            className="w-full object-cover h-[8         first-letter:0vh]"
             autoPlay
             loop
             src="/pexels-vimeo-857149-1920x742-30fps.mp4"
