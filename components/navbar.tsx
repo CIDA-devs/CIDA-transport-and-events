@@ -1,4 +1,6 @@
 import React from "react";
+import Link from 'next/link';
+
 
 function Navbar() {
   return (
@@ -12,7 +14,9 @@ function Navbar() {
         </div>
         {/* services */}
         <div className="flex gap-5 text-white md:text-xl text-sm">
-          <h1>Explore</h1>
+        <Link href="/about">
+          About
+          </Link>
           <h1>Travel</h1>
           <h1>Food</h1>
           <h1>Contact</h1>
