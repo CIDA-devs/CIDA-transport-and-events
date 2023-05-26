@@ -11,11 +11,11 @@ function Navbar() {
           </h1>
         </div>
         {/* services */}
-        <div className="flex gap-5 text-white md:text-xl text-sm">
-          <h1>Explore</h1>
-          <h1>Travel</h1>
-          <h1>Food</h1>
-          <h1>Contact</h1>
+        <div className="flex gap-5 text-white md:text-xl text-sm cursor-pointer">
+          <h1 className="hover:underline">Explore</h1>
+          <h1 className="hover:underline">Travel</h1>
+          <h1 className="hover:underline">Food</h1>
+          <h1 className="hover:underline">Contact</h1>
         </div>
       </div>
     </div>

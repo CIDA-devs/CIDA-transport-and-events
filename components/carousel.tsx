@@ -17,7 +17,7 @@ function carousel() {
         {/* carousel video for events */}
         <div className="relative">
           <video
-            className="w-full object-cover h-[8         first-letter:0vh]"
+            className="w-full object-cover h-[80vh]"
             autoPlay
             loop
             src="/pexels-vimeo-857149-1920x742-30fps.mp4"
@@ -27,10 +27,10 @@ function carousel() {
           <div className="max-w-7xl mx-auto">
             <div className="flex items-center w-[100%]  h-[90vh] absolute top-0 px-10 ">
               <div>
-                <h1 className="text-white text-8xl font-bold text-left">
+                <h1 className="text-white lg:text-8xl md:text-5xl text-3xl font-bold text-left">
                   PLAN YOUR EVENTS <br /> WITH US
                 </h1>
-                <p className="text-white text-xl pt-5 text-left">
+                <p className="text-white lg:text-xl text-[12px] pt-5 text-left">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Numquam deserunt corporis rem <br /> iure voluptate commodi
                   blanditiis placeat
@@ -56,10 +56,10 @@ function carousel() {
           <div className="max-w-7xl mx-auto">
             <div className="flex items-center w-[100%]  h-[90vh] absolute top-0 px-10 ">
               <div>
-                <h1 className="text-white text-8xl font-bold text-left">
+                <h1 className="text-white lg:text-8xl md:text-5xl text-3xl font-bold text-left">
                   RENT YOUR CARS <br /> FROM US
                 </h1>
-                <p className="text-white text-xl pt-5 text-left">
+                <p className="text-white lg:text-xl text-[12px] pt-5 text-left">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Numquam deserunt corporis rem <br /> iure voluptate commodi
                   blanditiis placeat
