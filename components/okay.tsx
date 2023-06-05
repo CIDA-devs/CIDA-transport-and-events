@@ -1,24 +1,86 @@
 import React from "react";
+import Image from "next/image";
 
 function about() {
   return (
-    <div>
-      <div className="w-full object-cover">
-        <svg
-          id="visual"
-          viewBox="0 0 900 600"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlnsXlink="http://www.w3.org/1999/xlink"
-          version="1.1"
-        >
-          <rect x="0" y="0" width="900" height="600" fill="#333333"></rect>
-          <path
-            d="M0 418L21.5 418.7C43 419.3 86 420.7 128.8 419.5C171.7 418.3 214.3 414.7 257.2 410C300 405.3 343 399.7 385.8 399C428.7 398.3 471.3 402.7 514.2 396.2C557 389.7 600 372.3 642.8 378.5C685.7 384.7 728.3 414.3 771.2 424.7C814 435 857 426 878.5 421.5L900 417L900 601L878.5 601C857 601 814 601 771.2 601C728.3 601 685.7 601 642.8 601C600 601 557 601 514.2 601C471.3 601 428.7 601 385.8 601C343 601 300 601 257.2 601C214.3 601 171.7 601 128.8 601C86 601 43 601 21.5 601L0 601Z"
-            fill="#fff"
-            stroke-linecap="round"
-            stroke-linejoin="miter"
-          ></path>
-        </svg>
+    <div className="">
+      <div className="bg-[#F2F3F8] pb-10">
+        <div className="flex justify-between items-center max-w-[1800px] mx-auto px-10 py-8">
+          <h1 className="md:text-2xl text-sm font-semibold">
+            OUR EVENT PLANNING
+          </h1>
+          <h1 className="border md:w-[120px] md:h-[50px] w-[100px] h-[30px] flex justify-center rounded-[20px] items-center text-black md:text-sm text-xs hover:bg-[#E6E1FF] cursor-pointer">
+            View All
+          </h1>
+        </div>
+        <div className="max-w-[1800px] mx-auto grid md:grid-cols-2 xl:grid-cols-4 place-items-center grid-cols-1  gap-8 px-10 md:py-5 pb-10">
+          {" "}
+          <div className="relative hover:scale-105 cursor-pointer ">
+            <Image
+              className="w-[400px]   lg:h-[300px] h-[250px] rounded-t-lg"
+              src="/pexels-rdne-stock-project-6518974.jpg"
+              width={1000}
+              height={1000}
+              alt=""
+            ></Image>
+            <div className="flex items-center bg-white p-3 h-[70px] text-black absolute justify-between w-full rounded-[20px] top-[85%]">
+              <h1 className="text-[18px] font-semibold">Birthday Parties</h1>
+
+              <h1 className="text-black text-[14px] font-medium hover:bg-[#E6E1FF] cursor-pointer border flex justify-center items-center p-2 rounded-[30px]">
+                Book Us
+              </h1>
+            </div>
+          </div>
+          <div className="relative hover:scale-105 mt-5 cursor-pointer md:mt-0">
+            <Image
+              className="w-[400px] lg:h-[300px] h-[250px] cursor-pointer rounded-t-lg"
+              src="/pexels-transtudios-photography-&-video-3082764.jpg"
+              width={1000}
+              height={1000}
+              alt=""
+            ></Image>
+            <div className="flex items-center bg-white p-3 h-[70px] text-black absolute justify-between w-full rounded-[20px] top-[85%]">
+              <h1 className="text-[18px] font-semibold">Weddings</h1>
+
+              <h1 className="text-black text-[14px] font-medium hover:bg-[#E6E1FF] cursor-pointer border flex justify-center items-center p-2 rounded-[30px]">
+                Book Us
+              </h1>
+            </div>
+          </div>
+          <div className="relative hover:scale-105 mt-5 cursor-pointer md:mt-0">
+            {" "}
+            <Image
+              className="w-[400px] lg:h-[300px] h-[250px] cursor-pointer  rounded-t-lg"
+              src="/pexels-pixabay-207691.jpg"
+              width={1000}
+              height={1000}
+              alt=""
+            ></Image>
+            <div className="flex items-center bg-white p-3 h-[70px] cursor-pointer text-black absolute justify-between w-full rounded-[20px] top-[85%]">
+              <h1 className="text-[18px] font-semibold">Seminars</h1>
+
+              <h1 className="text-black text-[14px] font-medium hover:bg-[#E6E1FF] cursor-pointer border flex justify-center items-center p-2 rounded-[30px]">
+                Book Us
+              </h1>
+            </div>
+          </div>
+          <div className="relative hover:scale-105 mt-5 md:mt-0 cursor-pointer">
+            <Image
+              className="w-[400px] lg:h-[300px] h-[250px] cursor-pointer rounded-t-lg"
+              src="/pexels-pixabay-50675.jpg"
+              width={1000}
+              height={1000}
+              alt=""
+            ></Image>
+            <div className="flex items-center bg-white p-3 h-[70px] text-black absolute justify-between w-full rounded-[20px] top-[85%]">
+              <h1 className="text-[18px] font-semibold">Conferences</h1>
+
+              <h1 className="text-black text-[14px] font-medium hover:bg-[#E6E1FF] cursor-pointer border flex justify-center items-center p-2 rounded-[30px]">
+                Book Us
+              </h1>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

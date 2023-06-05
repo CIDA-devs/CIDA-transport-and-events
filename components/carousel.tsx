@@ -9,9 +9,12 @@ export default function carousel() {
     <div>
       <Carousel
         autoPlay
+        showIndicators
         infiniteLoop
         showStatus={false}
         showThumbs={false}
+        showArrows
+        swipeable={false}
         interval={10000}
       >
         {/* carousel video for events */}
@@ -22,7 +25,7 @@ export default function carousel() {
             loop
             src="/pexels-vimeo-857149-1920x742-30fps.mp4"
           ></video>
-          <div className="bg-black/40 h-screen absolute top-0 bottom-0 right-0 left-0"></div>
+          <div className="bg-black/40 h-screen absolute top-0 bottom-0 right-0 left-0 "></div>
           {/* text on the video events */}
           <div className="max-w-7xl mx-auto">
             <div className="flex items-center w-[100%]  h-[90vh] absolute top-0 px-10 ">
@@ -35,7 +38,7 @@ export default function carousel() {
                   Numquam deserunt corporis rem <br /> iure voluptate commodi
                   blanditiis placeat
                 </p>
-                <h1 className="text-left font-semibold shadow-md cursor-pointer hover:bg-white hover:text-black  text-white mt-14  w-[130px] h-[50px] flex justify-center items-center bg-blue-600">
+                <h1 className="text-left font-semibold shadow-md cursor-pointer hover:bg-white hover:text-black  text-black mt-14  w-[130px] h-[50px] flex justify-center items-center bg-[#b8abf9]">
                   LEARN MORE
                 </h1>
               </div>
@@ -51,7 +54,7 @@ export default function carousel() {
             loop
             src="/pexels-taryn-elliott-5309381-1920x1080-25fps.mp4"
           ></video>
-          <div className="bg-black/40 h-screen absolute top-0 bottom-0 right-0 left-0"></div>
+          <div className="bg-black/40 h-screen absolute top-0 bottom-0 right-0 left-0 "></div>
           {/* text on the video car rentals */}
           <div className="max-w-7xl mx-auto">
             <div className="flex items-center w-[100%]  h-[90vh] absolute top-0 px-10 ">
@@ -64,7 +67,7 @@ export default function carousel() {
                   Numquam deserunt corporis rem <br /> iure voluptate commodi
                   blanditiis placeat
                 </p>
-                <h1 className="text-left font-semibold shadow-md cursor-pointer hover:bg-white hover:text-black  text-white mt-14  w-[130px] h-[50px] flex justify-center items-center bg-blue-600">
+                <h1 className="text-left font-semibold shadow-md cursor-pointer hover:bg-white hover:text-black  text-black mt-14  w-[130px] h-[50px] flex justify-center items-center bg-[#b8abf9]">
                   LEARN MORE
                 </h1>
               </div>
@@ -75,7 +78,6 @@ export default function carousel() {
     </div>
   );
 }
-
 
 // export default function AboutCarousel() {
 //   return (

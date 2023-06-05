@@ -7,7 +7,7 @@ import {
   AiFillFacebook,
   AiFillInstagram,
   AiFillTwitterSquare,
-  AiFillLinkedin
+  AiFillLinkedin,
 } from "react-icons/ai";
 
 import profile from "./images/profile.jpg";
@@ -125,12 +125,8 @@ const About = () => {
                   />
                 </div>
                 {/* <h1 className="text-black opacity-100 group-hover:opacity-0 transition-opacity"> */}
-                <h1 className="text-black text-center">
-                  CIDA CIDAIOUS
-                </h1>
-                <h1 className="text-black text-center">
-                  Secretary, CIDA
-                </h1>
+                <h1 className="text-black text-center">CIDA CIDAIOUS</h1>
+                <h1 className="text-black text-center">Secretary, CIDA</h1>
               </div>
             </article>
 
@@ -166,12 +162,8 @@ const About = () => {
                   />
                 </div>
                 {/* <h1 className="text-black opacity-100 group-hover:opacity-0 transition-opacity"> */}
-                <h1 className="text-black text-center">
-                  CIDA CIDAIOUS
-                </h1>
-                <h1 className="text-black text-center">
-                  Secretary, CIDA
-                </h1>
+                <h1 className="text-black text-center">CIDA CIDAIOUS</h1>
+                <h1 className="text-black text-center">Secretary, CIDA</h1>
               </div>
             </article>
 
@@ -207,12 +199,8 @@ const About = () => {
                   />
                 </div>
                 {/* <h1 className="text-black opacity-100 group-hover:opacity-0 transition-opacity"> */}
-                <h1 className="text-black text-center">
-                  CIDA CIDAIOUS
-                </h1>
-                <h1 className="text-black text-center">
-                  Secretary, CIDA
-                </h1>
+                <h1 className="text-black text-center">CIDA CIDAIOUS</h1>
+                <h1 className="text-black text-center">Secretary, CIDA</h1>
               </div>
             </article>
 
@@ -248,12 +236,8 @@ const About = () => {
                   />
                 </div>
                 {/* <h1 className="text-black opacity-100 group-hover:opacity-0 transition-opacity"> */}
-                <h1 className="text-black text-center">
-                  CIDA CIDAIOUS
-                </h1>
-                <h1 className="text-black text-center">
-                  Secretary, CIDA
-                </h1>
+                <h1 className="text-black text-center">CIDA CIDAIOUS</h1>
+                <h1 className="text-black text-center">Secretary, CIDA</h1>
               </div>
             </article>
 
@@ -289,12 +273,8 @@ const About = () => {
                   />
                 </div>
                 {/* <h1 className="text-black opacity-100 group-hover:opacity-0 transition-opacity"> */}
-                <h1 className="text-black text-center">
-                  CIDA CIDAIOUS
-                </h1>
-                <h1 className="text-black text-center">
-                  Secretary, CIDA
-                </h1>
+                <h1 className="text-black text-center">CIDA CIDAIOUS</h1>
+                <h1 className="text-black text-center">Secretary, CIDA</h1>
               </div>
             </article>
 
@@ -322,22 +302,13 @@ const About = () => {
               <div className=" z-10">
                 {/* div content */}
                 <div className="w-[300px] h-[340px] overflow-hidden">
-                  <Image
-                    loading="lazy"
-                    src={profile2}
-                    alt=""
-                  />
+                  <Image loading="lazy" src={profile2} alt="" />
                 </div>
                 {/* <h1 className="text-black opacity-100 group-hover:opacity-0 transition-opacity"> */}
-                <h1 className="text-black text-center">
-                  CIDA CIDAIOUS
-                </h1>
-                <h1 className="text-black text-center">
-                  Secretary, CIDA
-                </h1>
+                <h1 className="text-black text-center">CIDA CIDAIOUS</h1>
+                <h1 className="text-black text-center">Secretary, CIDA</h1>
               </div>
             </article>
-
 
             <article className="w-[300px] h-[400px] shadow-md relative group pb-[50px] rounded-lg overflow-hidden mb-[80px]">
               <div className="absolute inset-0 bg-black w-[300px] h-[400px] opacity-0 group-hover:opacity-60 transition-opacity flex justify-center items-center z-50">
@@ -371,12 +342,8 @@ const About = () => {
                   />
                 </div>
                 {/* <h1 className="text-black opacity-100 group-hover:opacity-0 transition-opacity"> */}
-                <h1 className="text-black text-center">
-                  CIDA CIDAIOUS
-                </h1>
-                <h1 className="text-black text-center">
-                  Secretary, CIDA
-                </h1>
+                <h1 className="text-black text-center">CIDA CIDAIOUS</h1>
+                <h1 className="text-black text-center">Secretary, CIDA</h1>
               </div>
             </article>
           </section>
