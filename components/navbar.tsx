@@ -14,7 +14,7 @@ function Navbar() {
         {/* services */}
         <div className="flex gap-5 text-white md:text-xl text-sm">
           <Link href="/about">About</Link>
-          <h1>Travel</h1>
+          <Link href="/event">Events</Link>
           <h1>Food</h1>
           <h1>Contact</h1>
         </div>
