@@ -1,6 +1,5 @@
 import React from "react";
-import Navbar from "./navbar";
-import Carousel from "./carousel";
+import Navbar from "../../components/navbar";
 import Image from "next/image";
 
 import {
@@ -10,8 +9,8 @@ import {
   AiFillLinkedin,
 } from "react-icons/ai";
 
-import profile from "./images/profile.jpg";
-import profile2 from "./images/profile2.jpg";
+import profile from "../../components/images/profile.jpg";
+import profile2 from "../../components/images/profile2.jpg";
 import next from "next/types";
 
 const About = () => {
@@ -20,13 +19,12 @@ const About = () => {
       <Navbar />
 
       {/* Carousel-Banner here */}
-      <Carousel />
 
       <main>
         <section className="my-8 mx-16">
           <p className="text-[#181818] text-center text-2xl">
             Want to know more about us? We <br /> render services like car
-            rentals and event planning services. It seems like you're trying to
+            rentals and event planning services. It seems like youre trying to
             install the next-next-link package instead of next/link. However,
             based on the package name you provided, next-next-link, it appears
             that there might be a typo in the package name. you provided,
@@ -51,7 +49,7 @@ const About = () => {
                   Our Mission
                 </h2>
                 <p>
-                  It seems like you're trying to install the next-next-link
+                  It seems like youre trying to install the next-next-link
                   package instead of next/link. However, based on the package
                   name you provided, next-next-link, it appears that there might
                   be a typo in the package name. you provided, next-next-link,
@@ -69,7 +67,7 @@ const About = () => {
                   Our Vision
                 </h2>
                 <p>
-                  It seems like you're trying to install the next-next-link
+                  It seems like youre trying to install the next-next-link
                   package instead of next/link. However, based on the package
                   name you provided, next-next-link, it appears that there might
                   be a typo in the package name. you provided, next-next-link,

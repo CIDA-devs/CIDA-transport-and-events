@@ -12,6 +12,7 @@ function Navbar() {
           </h1>
         </div>
         {/* services */}
+<<<<<<< HEAD
         <div className="md:flex hidden gap-5 text-black md:text-xl text-sm">
           <Link href="/about">
             <h1 className="border w-[120px] h-[40px] flex justify-center rounded-[20px] items-center text-black md:text-[18px] text-sm hover:bg-white font-semibold cursor-pointer">
@@ -27,6 +28,13 @@ function Navbar() {
           <h1 className="border w-[120px] h-[40px] flex justify-center rounded-[20px] items-center text-black md:text-[18px] text-sm hover:bg-white font-semibold cursor-pointer">
             Contact
           </h1>
+=======
+        <div className="flex gap-5 text-white md:text-xl text-sm">
+          <Link href="/about">About</Link>
+          <Link href="/event">Events</Link>
+          <h1>Food</h1>
+          <h1>Contact</h1>
+>>>>>>> f0b886b43627091101e21a7cdeed09375253982d
         </div>
       </div>
     </div>
