@@ -18,7 +18,7 @@ function about() {
           <div className="relative hover:scale-105 cursor-pointer ">
             <Image
               className="w-[400px]   lg:h-[300px] h-[250px] rounded-t-lg"
-              src="/pexels-rdne-stock-project-6518974.jpg"
+              src="/pexels-rdne-stock-project-6518974-min.jpg"
               width={1000}
               height={1000}
               alt=""
@@ -51,7 +51,7 @@ function about() {
             {" "}
             <Image
               className="w-[400px] lg:h-[300px] h-[250px] cursor-pointer  rounded-t-lg"
-              src="/pexels-pixabay-207691.jpg"
+              src="/pexels-pixabay-207691-min.jpg"
               width={1000}
               height={1000}
               alt=""
@@ -67,7 +67,7 @@ function about() {
           <div className="relative hover:scale-105 mt-5 md:mt-0 cursor-pointer">
             <Image
               className="w-[400px] lg:h-[300px] h-[250px] cursor-pointer rounded-t-lg"
-              src="/pexels-pixabay-50675.jpg"
+              src="/pexels-pixabay-50675-min.jpg"
               width={1000}
               height={1000}
               alt=""

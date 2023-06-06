@@ -1,6 +1,9 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import { HiArrowLongRight } from "react-icons/hi2";
+import { motion } from "framer-motion";
 
 function events() {
   return (
@@ -8,9 +11,21 @@ function events() {
       {" "}
       <div className="lg:flex pt-10 justify-between w-full">
         <div className="bg-[#7F7ADE] w-full lg:pt-16 pt-8">
-          <h1 className="text-center text-white lg:text-4xl text-2xl lg:pb-3 font-semibold">
+          <motion.h1
+            initial={{
+              opacity: 0,
+              translateY: 50,
+            }}
+            whileInView={{ opacity: 1, translateY: 0 }}
+            viewport={{ once: true }}
+            transition={{
+              ease: "linear",
+              duration: 0.5,
+            }}
+            className="text-center text-white lg:text-4xl text-2xl lg:pb-3 font-semibold"
+          >
             Let us make your events
-          </h1>
+          </motion.h1>
 
           <div className="flex justify-center relative pt-5">
             <Image
@@ -20,22 +35,59 @@ function events() {
               height={1000}
               alt=""
             ></Image>
-            <h1 className="font-semibold absolute lg:-top-2 top-0  text-center text-2xl lg:text-4xl text-white ">
+            <motion.h1
+              initial={{
+                opacity: 0,
+                translateY: 50,
+              }}
+              whileInView={{ opacity: 1, translateY: 0 }}
+              viewport={{ once: true }}
+              transition={{
+                ease: "linear",
+                duration: 0.5,
+                delay: 0.1,
+              }}
+              className="font-semibold absolute lg:-top-2 top-0  text-center text-2xl lg:text-4xl text-white "
+            >
               Memorable
-            </h1>
+            </motion.h1>
           </div>
-          <div className=" flex justify-center">
+          <motion.div
+            initial={{
+              opacity: 0,
+              translateY: 50,
+            }}
+            whileInView={{ opacity: 1, translateY: 0 }}
+            viewport={{ once: true }}
+            transition={{
+              ease: "linear",
+              duration: 0.5,
+            }}
+            className=" flex justify-center"
+          >
             {" "}
             <p className="text-center pt-10 lg:text-sm text-xs  lg:w-[500px] w-[300px]">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
               placeat, explicabo quo ut consequatur ratione inventore quaerat.
               Velit, autem, cumque facilis
             </p>
-          </div>
+          </motion.div>
 
-          <div className="text-white flex justify-center mt-5 text-5xl font-extralight pb-5 lg:pb-0">
+          <motion.div
+            initial={{
+              opacity: 0,
+              translateX: -50,
+            }}
+            whileInView={{ opacity: 1, translateX: 0 }}
+            viewport={{ once: true }}
+            transition={{
+              ease: "linear",
+              duration: 0.5,
+            }}
+            className="text-white flex justify-center mt-5 text-5xl font-extralight pb-5 lg:pb-0"
+          >
             <HiArrowLongRight className="bg-white/10 rounded-full p-2 w-[100px] hover:bg-white hover:text-black cursor-pointer" />
-          </div>
+          </motion.div>
         </div>
         <div className="w-full">
           <Image
