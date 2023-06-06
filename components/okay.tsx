@@ -19,8 +19,8 @@ function about() {
             <Image
               className="w-[400px]   lg:h-[300px] h-[250px] rounded-t-lg"
               src="/pexels-rdne-stock-project-6518974-min.jpg"
-              width={1000}
-              height={1000}
+              width={400}
+              height={300}
               alt=""
             ></Image>
             <div className="flex items-center bg-white p-3 h-[70px] text-black absolute justify-between w-full rounded-[20px] top-[85%]">
@@ -35,8 +35,8 @@ function about() {
             <Image
               className="w-[400px] lg:h-[300px] h-[250px] cursor-pointer rounded-t-lg"
               src="/pexels-transtudios-photography-&-video-3082764.jpg"
-              width={1000}
-              height={1000}
+              width={400}
+              height={300}
               alt=""
             ></Image>
             <div className="flex items-center bg-white p-3 h-[70px] text-black absolute justify-between w-full rounded-[20px] top-[85%]">
@@ -52,8 +52,8 @@ function about() {
             <Image
               className="w-[400px] lg:h-[300px] h-[250px] cursor-pointer  rounded-t-lg"
               src="/pexels-pixabay-207691-min.jpg"
-              width={1000}
-              height={1000}
+              width={400}
+              height={300}
               alt=""
             ></Image>
             <div className="flex items-center bg-white p-3 h-[70px] cursor-pointer text-black absolute justify-between w-full rounded-[20px] top-[85%]">
@@ -68,8 +68,8 @@ function about() {
             <Image
               className="w-[400px] lg:h-[300px] h-[250px] cursor-pointer rounded-t-lg"
               src="/pexels-pixabay-50675-min.jpg"
-              width={1000}
-              height={1000}
+              width={400}
+              height={300}
               alt=""
             ></Image>
             <div className="flex items-center bg-white p-3 h-[70px] text-black absolute justify-between w-full rounded-[20px] top-[85%]">

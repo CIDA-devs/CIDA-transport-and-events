@@ -93,8 +93,8 @@ function events() {
           <Image
             src="/pexels-rdne-stock-project-7551764.jpg"
             className="object-cover w-full h-full"
-            width={1000}
-            height={1000}
+            width={500}
+            height={500}
             alt=""
           ></Image>
         </div>

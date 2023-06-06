@@ -31,8 +31,8 @@ function fleet() {
                 <Image
                   className="xl:w-[400px] xl:h-[300px] lg:w-[350px] lg:h-[250px] w-[300px] h-[200px] transform hover:-scale-x-100 hover:scale-110 cursor-pointer"
                   src="/MERCEDES-BENZ_GLC-2022_main-removebg-preview.png"
-                  width={800}
-                  height={800}
+                  width={400}
+                  height={300}
                   alt=""
                 ></Image>
               </div>
@@ -50,8 +50,8 @@ function fleet() {
                 <Image
                   className="transform -scale-x-100 xl:w-[400px] xl:h-[300px] lg:w-[350px] lg:h-[250px] w-[300px] h-[200px] hover:scale-110 cursor-pointer"
                   src="/G-ClassModelImage-removebg-preview.png"
-                  width={800}
-                  height={800}
+                  width={400}
+                  height={300}
                   alt=""
                 ></Image>
               </div>
@@ -69,8 +69,8 @@ function fleet() {
                 <Image
                   className="xl:w-[400px] xl:h-[300px] lg:w-[350px] lg:h-[250px] w-[300px] h-[200px] hover:scale-110 cursor-pointer transform hover:-scale-x-100"
                   src="/MERCEDES-BENZ_GLC-2022_main-removebg-preview.png"
-                  width={800}
-                  height={800}
+                  width={400}
+                  height={300}
                   alt=""
                 ></Image>
               </div>
