@@ -16,8 +16,7 @@ function fleet() {
             <h1 className=" text-center text-white lg:text-left text-sm lg:w-[50%]">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
               quam vero consectetur ea debitis neque velit eveniet quia,
-              expedita vel fuga nisi eaque tempora accusamus optio odio ut?
-              Possimus, numquam.
+              expedita.
             </h1>
             <div className="flex justify-center pt-5 lg:pt-0">
               <h1 className="border md:w-[120px] md:h-[50px] w-[100px] h-[30px] flex justify-center rounded-[20px] items-center text-white hover:text-black md:text-sm text-xs hover:bg-[#E6E1FF] cursor-pointer">
