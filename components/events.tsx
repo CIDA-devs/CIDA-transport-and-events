@@ -17,7 +17,7 @@ function events() {
 
           <div className="flex justify-center relative pt-5">
             <Image
-              src="/photo_2023-06-01_16-08-08.jpg"
+              src="/photo_2023-06-01_16-08-08 (1).jpg"
               className="w-[250px] h-[300px] rounded-2xl"
               width={250}
               height={300}
