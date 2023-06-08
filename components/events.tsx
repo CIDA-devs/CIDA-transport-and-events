@@ -19,8 +19,8 @@ function events() {
             <Image
               src="/photo_2023-06-01_16-08-08.jpg"
               className="w-[250px] h-[300px] rounded-2xl"
-              width={1000}
-              height={1000}
+              width={250}
+              height={300}
               alt=""
             ></Image>
             <h1 className="font-semibold absolute lg:-top-2 top-0  text-center text-2xl lg:text-4xl text-white ">
