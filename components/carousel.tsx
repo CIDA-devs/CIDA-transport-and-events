@@ -31,61 +31,17 @@ export default function carousel() {
           <div className="max-w-7xl mx-auto">
             <div className="flex items-center w-[100%]  h-[90vh] absolute top-0 px-10 ">
               <div>
-                <motion.h1
-                  initial={{
-                    opacity: 0,
-                    translateY: 50,
-                  }}
-                  animate={{
-                    opacity: 1,
-                    translateY: 0,
-                  }}
-                  transition={{
-                    ease: "linear",
-                    duration: 0.5,
-                  }}
-                  className="text-white lg:text-8xl md:text-5xl text-3xl font-bold text-left"
-                >
+                <h1 className="text-white lg:text-8xl md:text-5xl text-3xl font-bold text-left">
                   PLAN YOUR EVENTS <br /> WITH US
-                </motion.h1>
-                <motion.p
-                  initial={{
-                    opacity: 0,
-                    translateY: 50,
-                  }}
-                  animate={{
-                    opacity: 1,
-                    translateY: 0,
-                  }}
-                  transition={{
-                    ease: "linear",
-                    duration: 0.5,
-                    delay: 0.2,
-                  }}
-                  className="text-white lg:text-xl text-[12px] pt-5 text-left"
-                >
+                </h1>
+                <p className="text-white lg:text-xl text-[12px] pt-5 text-left">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Numquam deserunt corporis rem <br /> iure voluptate commodi
                   blanditiis placeat
-                </motion.p>
-                <motion.h1
-                  initial={{
-                    opacity: 0,
-                    translateY: 50,
-                  }}
-                  animate={{
-                    opacity: 1,
-                    translateY: 0,
-                  }}
-                  transition={{
-                    ease: "linear",
-                    duration: 0.5,
-                    delay: 0.4,
-                  }}
-                  className="text-left font-semibold shadow-md cursor-pointer hover:bg-white hover:text-black  text-black mt-14  w-[130px] h-[50px] flex justify-center items-center bg-[#b8abf9]"
-                >
+                </p>
+                <h1 className="text-left font-semibold shadow-md cursor-pointer hover:bg-white hover:text-black  text-black mt-14  w-[130px] h-[50px] flex justify-center items-center bg-[#b8abf9]">
                   LEARN MORE
-                </motion.h1>
+                </h1>
               </div>
             </div>
           </div>
@@ -104,56 +60,18 @@ export default function carousel() {
           <div className="max-w-7xl mx-auto">
             <div className="flex items-center w-[100%]  h-[90vh] absolute top-0 px-10 ">
               <div>
-                <motion.h1
-                  initial={{
-                    opacity: 0,
-                    translateY: 50,
-                  }}
-                  whileInView={{ opacity: 1, translateY: 0 }}
-                  viewport={{ once: true }}
-                  transition={{
-                    ease: "linear",
-                    duration: 0.5,
-                  }}
-                  className="text-white lg:text-8xl md:text-5xl text-3xl font-bold text-left"
-                >
+                <h1 className="text-white lg:text-8xl md:text-5xl text-3xl font-bold text-left">
                   RENT YOUR CARS
                   <br /> FROM US
-                </motion.h1>
-                <motion.p
-                  initial={{
-                    opacity: 0,
-                    translateY: 50,
-                  }}
-                  whileInView={{ opacity: 1, translateY: 0 }}
-                  viewport={{ once: true }}
-                  transition={{
-                    ease: "linear",
-                    duration: 0.5,
-                    delay: 0.2,
-                  }}
-                  className="text-white lg:text-xl text-[12px] pt-5 text-left"
-                >
+                </h1>
+                <p className="text-white lg:text-xl text-[12px] pt-5 text-left">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Numquam deserunt corporis rem <br /> iure voluptate commodi
                   blanditiis placeat
-                </motion.p>
-                <motion.h1
-                  initial={{
-                    opacity: 0,
-                    translateY: 50,
-                  }}
-                  whileInView={{ opacity: 1, translateY: 0 }}
-                  viewport={{ once: true }}
-                  transition={{
-                    ease: "linear",
-                    duration: 0.5,
-                    delay: 0.4,
-                  }}
-                  className="text-left font-semibold shadow-md cursor-pointer hover:bg-white hover:text-black  text-black mt-14  w-[130px] h-[50px] flex justify-center items-center bg-[#b8abf9]"
-                >
+                </p>
+                <h1 className="text-left font-semibold shadow-md cursor-pointer hover:bg-white hover:text-black  text-black mt-14  w-[130px] h-[50px] flex justify-center items-center bg-[#b8abf9]">
                   LEARN MORE
-                </motion.h1>
+                </h1>
               </div>
             </div>
           </div>
