@@ -91,7 +91,7 @@ function events() {
         </div>
         <div className="w-full">
           <Image
-            src="/pexels-rdne-stock-project-7551764.jpg"
+            src="/pexels-rdne-stock-project-6518974-min.jpg"
             className="object-cover w-full h-full"
             width={500}
             height={500}
