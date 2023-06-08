@@ -36,7 +36,7 @@ function events() {
             </p>
           </div>
 
-          <div className="text-white flex justify-center mt-5 text-5xl font-extralight pb-5 lg:pb-0">
+          <div className="text-white flex justify-center mt-5 text-5xl font-extralight xl:pb-10 2xl:pb-5 pb-5 lg:pb-0">
             <HiArrowLongRight className="bg-white/10 rounded-full p-2 w-[100px] hover:bg-white hover:text-black cursor-pointer" />
           </div>
         </div>

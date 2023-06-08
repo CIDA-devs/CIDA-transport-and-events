@@ -17,7 +17,7 @@ function about() {
           {" "}
           <div className="relative hover:scale-105 cursor-pointer ">
             <Image
-              className="w-[400px]   lg:h-[300px] h-[250px] rounded-t-lg"
+              className="w-[400px]   lg:h-[300px] xl:h-[250px] 2xl:h-[300px] h-[250px] rounded-t-lg"
               src="/pexels-rdne-stock-project-6518974-min.jpg"
               width={400}
               height={300}
@@ -33,8 +33,8 @@ function about() {
           </div>
           <div className="relative hover:scale-105 mt-5 cursor-pointer md:mt-0">
             <Image
-              className="w-[400px] lg:h-[300px] h-[250px] cursor-pointer rounded-t-lg"
-              src="/pexels-transtudios-photography-&-video-3082764.jpg"
+              className="w-[400px] lg:h-[300px] xl:h-[250px] 2xl:h-[300px] h-[250px] cursor-pointer rounded-t-lg"
+              src="/pexels-transtudios-photography-&-video-3082764-min.jpg"
               width={400}
               height={300}
               alt=""
@@ -47,10 +47,10 @@ function about() {
               </h1>
             </div>
           </div>
-          <div className="relative hover:scale-105 mt-5 cursor-pointer md:mt-0">
+          <div className="relative hover:scale-105  mt-5 cursor-pointer md:mt-5 xl:mt-0">
             {" "}
             <Image
-              className="w-[400px] lg:h-[300px] h-[250px] cursor-pointer  rounded-t-lg"
+              className="w-[400px] lg:h-[300px] xl:h-[250px] 2xl:h-[300px] h-[250px] cursor-pointer  rounded-t-lg"
               src="/pexels-pixabay-207691-min.jpg"
               width={400}
               height={300}
@@ -64,9 +64,9 @@ function about() {
               </h1>
             </div>
           </div>
-          <div className="relative hover:scale-105 mt-5 md:mt-0 cursor-pointer">
+          <div className="relative hover:scale-105  mt-5 xl:mt-0 md:mt-5 cursor-pointer">
             <Image
-              className="w-[400px] lg:h-[300px] h-[250px] cursor-pointer rounded-t-lg"
+              className="w-[400px] lg:h-[300px] xl:h-[250px] 2xl:h-[300px] h-[250px] cursor-pointer rounded-t-lg"
               src="/pexels-pixabay-50675-min.jpg"
               width={400}
               height={300}

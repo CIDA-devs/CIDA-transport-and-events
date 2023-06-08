@@ -74,7 +74,7 @@ function fleet() {
                   alt=""
                 ></Image>
               </div>
-              <div className="flex items-center justify-between pt-10">
+              <div className="flex items-center justify-between pt-5">
                 {" "}
                 <h1 className="text-xl text-white">Mercedez Benz</h1>
                 <h1 className="border md:w-[120px] md:h-[50px] w-[100px] h-[30px] flex justify-center rounded-[20px] items-center text-white hover:text-black md:text-sm text-xs hover:bg-[#E6E1FF] cursor-pointer">
