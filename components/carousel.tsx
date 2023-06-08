@@ -31,15 +31,15 @@ export default function carousel() {
           <div className="max-w-7xl mx-auto">
             <div className="flex items-center w-[100%]  h-[90vh] absolute top-0 px-10 ">
               <div>
-                <h1 className="text-white lg:text-8xl md:text-5xl text-3xl font-bold text-left">
+                <h1 className="text-white lg:text-8xl md:text-5xl text-3xl font-bold text-left text-form ">
                   PLAN YOUR EVENTS <br /> WITH US
                 </h1>
-                <p className="text-white lg:text-xl text-[12px] pt-5 text-left">
+                <p className="text-white lg:text-xl text-[12px] pt-5 text-left text-form2">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Numquam deserunt corporis rem <br /> iure voluptate commodi
                   blanditiis placeat
                 </p>
-                <h1 className="text-left font-semibold shadow-md cursor-pointer hover:bg-white hover:text-black  text-black mt-14  w-[130px] h-[50px] flex justify-center items-center bg-[#b8abf9]">
+                <h1 className="text-left font-semibold shadow-md cursor-pointer hover:bg-white hover:text-black  text-black mt-14  w-[130px] h-[50px] flex justify-center items-center bg-[#b8abf9] text-form3">
                   LEARN MORE
                 </h1>
               </div>
@@ -60,7 +60,7 @@ export default function carousel() {
           <div className="max-w-7xl mx-auto">
             <div className="flex items-center w-[100%]  h-[90vh] absolute top-0 px-10 ">
               <div>
-                <h1 className="text-white lg:text-8xl md:text-5xl text-3xl font-bold text-left">
+                <h1 className="text-white lg:text-8xl md:text-5xl text-3xl font-bold text-left text-form">
                   RENT YOUR CARS
                   <br /> FROM US
                 </h1>
