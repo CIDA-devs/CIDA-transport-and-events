@@ -1,13 +1,22 @@
+"use client";
 import React from "react";
+import { useInView } from "react-intersection-observer";
 
 function footer() {
+  const [ref, inView] = useInView({
+    triggerOnce: true, // Only trigger the animation once
+  });
   return (
     <div>
       <div className="bg-[#18181C] text-white mt-12 font-medium pb-10">
         <section>
           <div className="flex justify-center pt-14 md:text-4xl text-[30px] md:gap-5 gap-2">
-            <h1>Affordable.</h1>
-            <h1>Reliable.</h1>
+            <h1 ref={ref} className={` ${inView ? "text-form6" : ""}`}>
+              Affordable.
+            </h1>
+            <h1 ref={ref} className={` ${inView ? "text-form5" : ""}`}>
+              Reliable.
+            </h1>
           </div>
           <div className="text-center pt-3 font-light px-5">
             <h1>

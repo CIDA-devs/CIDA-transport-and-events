@@ -38,3 +38,33 @@
 
   animation: fade-in 1s ease 0.4s forwards;
 }
+@keyframes fade-in2 {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.text-form5 {
+  opacity: 1;
+  transform: translateX(0px);
+  animation: fade-in2 1s ease;
+}
+@keyframes fade-in3 {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.text-form6 {
+  opacity: 1;
+  transform: translateX(0px);
+  animation: fade-in3 1s ease;
+}

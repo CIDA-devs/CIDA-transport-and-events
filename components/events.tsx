@@ -3,7 +3,6 @@
 import React from "react";
 import Image from "next/image";
 import { HiArrowLongRight } from "react-icons/hi2";
-import { motion } from "framer-motion";
 
 function events() {
   return (
@@ -11,7 +10,7 @@ function events() {
       {" "}
       <div className="lg:flex pt-10 justify-between w-full">
         <div className="bg-[#7F7ADE] w-full lg:pt-16 pt-8">
-          <h1 className="text-center text-white lg:text-4xl text-2xl lg:pb-3 font-semibold">
+          <h1 className="text-center text-white lg:text-4xl text-2xl lg:pb-3 font-semibold text-form">
             Let us make your events
           </h1>
 
@@ -23,7 +22,7 @@ function events() {
               height={300}
               alt=""
             ></Image>
-            <h1 className="font-semibold absolute lg:-top-2 top-0  text-center text-2xl lg:text-4xl text-white ">
+            <h1 className="font-semibold absolute lg:-top-2 top-0  text-center text-2xl lg:text-4xl text-white text-form2">
               Memorable
             </h1>
           </div>

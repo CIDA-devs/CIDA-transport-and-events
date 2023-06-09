@@ -3,9 +3,12 @@
 import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 export default function carousel() {
+  const [ref, inView] = useInView({
+    triggerOnce: true, // Only trigger the animation once
+  });
   return (
     <div>
       <Carousel
@@ -60,16 +63,37 @@ export default function carousel() {
           <div className="max-w-7xl mx-auto">
             <div className="flex items-center w-[100%]  h-[90vh] absolute top-0 px-10 ">
               <div>
-                <h1 className="text-white lg:text-8xl md:text-5xl text-3xl font-bold text-left text-form">
+                <h1
+                  ref={ref}
+                  className={` ${
+                    inView
+                      ? "text-form text-white lg:text-8xl md:text-5xl text-3xl font-bold text-left"
+                      : ""
+                  }`}
+                >
                   RENT YOUR CARS
                   <br /> FROM US
                 </h1>
-                <p className="text-white lg:text-xl text-[12px] pt-5 text-left">
+                <p
+                  ref={ref}
+                  className={` ${
+                    inView
+                      ? "text-form2 text-white lg:text-xl text-[12px] pt-5 text-left"
+                      : ""
+                  }`}
+                >
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Numquam deserunt corporis rem <br /> iure voluptate commodi
                   blanditiis placeat
                 </p>
-                <h1 className="text-left font-semibold shadow-md cursor-pointer hover:bg-white hover:text-black  text-black mt-14  w-[130px] h-[50px] flex justify-center items-center bg-[#b8abf9]">
+                <h1
+                  ref={ref}
+                  className={` ${
+                    inView
+                      ? "text-form3 text-left font-semibold shadow-md cursor-pointer hover:bg-white hover:text-black  text-black mt-14  w-[130px] h-[50px] flex justify-center items-center bg-[#b8abf9]"
+                      : ""
+                  }`}
+                >
                   LEARN MORE
                 </h1>
               </div>
