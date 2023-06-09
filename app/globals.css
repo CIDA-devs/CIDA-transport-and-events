@@ -38,13 +38,18 @@
 
   animation: fade-in 1s ease 0.4s forwards;
 }
+<<<<<<< HEAD
 @keyframes fade-in2 {
+=======
+@keyframes fade-in {
+>>>>>>> 34840a2964c170e1a855fb8f87443538c91c50b9
   0% {
     opacity: 0;
     transform: translateX(50px);
   }
   100% {
     opacity: 1;
+<<<<<<< HEAD
     transform: translateX(0);
   }
 }
@@ -54,6 +59,18 @@
   animation: fade-in2 1s ease;
 }
 @keyframes fade-in3 {
+=======
+    transform: translateY(0);
+  }
+}
+.text-form5{
+opacity:1;
+transform: translateX(0px)
+animation: fade-in 1s ease;
+
+}
+@keyframes fade-in {
+>>>>>>> 34840a2964c170e1a855fb8f87443538c91c50b9
   0% {
     opacity: 0;
     transform: translateX(-50px);
@@ -63,8 +80,17 @@
     transform: translateX(0);
   }
 }
+<<<<<<< HEAD
 .text-form6 {
   opacity: 1;
   transform: translateX(0px);
   animation: fade-in3 1s ease;
 }
+=======
+.textform6{
+opacity:1;
+transform: translateX(0px)
+animation: fade-in 1s ease
+
+}
+>>>>>>> 34840a2964c170e1a855fb8f87443538c91c50b9

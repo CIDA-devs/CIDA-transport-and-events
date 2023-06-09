@@ -11,12 +11,17 @@ function footer() {
       <div className="bg-[#18181C] text-white mt-12 font-medium pb-10">
         <section>
           <div className="flex justify-center pt-14 md:text-4xl text-[30px] md:gap-5 gap-2">
+<<<<<<< HEAD
             <h1 ref={ref} className={` ${inView ? "text-form6" : ""}`}>
               Affordable.
             </h1>
             <h1 ref={ref} className={` ${inView ? "text-form5" : ""}`}>
               Reliable.
             </h1>
+=======
+            <h1 className="textform5">Affordable.</h1>
+            <h1 className="textform6">Reliable.</h1>
+>>>>>>> 34840a2964c170e1a855fb8f87443538c91c50b9
           </div>
           <div className="text-center pt-3 font-light px-5">
             <h1>
