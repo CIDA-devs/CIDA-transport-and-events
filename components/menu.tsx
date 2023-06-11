@@ -21,7 +21,7 @@ function Menu({ showMenu, active }: Props) {
         <Link href="/about">
           <div>
             <h1
-              className="cursor-pointer hover:underline text-4xl"
+              className="cursor-pointer hover:underline text-3xl"
               onClick={showMenu}
             >
               About Us
@@ -34,14 +34,24 @@ function Menu({ showMenu, active }: Props) {
               className="cursor-pointer hover:underline text-4xl"
               onClick={showMenu}
             >
-              Services
+              Travel
             </h1>
           </div>
         </Link>
         <Link href="#contact">
           <div>
             <h1
-              className="cursor-pointer hover:underline text-4xl"
+              className="cursor-pointer hover:underline text-3xl"
+              onClick={showMenu}
+            >
+              Food
+            </h1>
+          </div>
+        </Link>
+        <Link href="#contact">
+          <div>
+            <h1
+              className="cursor-pointer hover:underline text-3xl"
               onClick={showMenu}
             >
               Contact

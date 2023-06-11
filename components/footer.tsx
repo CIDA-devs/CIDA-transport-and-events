@@ -2,7 +2,7 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
 
-function footer() {
+function Footer() {
   const [ref, inView] = useInView({
     triggerOnce: true, // Only trigger the animation once
   });
@@ -46,4 +46,4 @@ function footer() {
   );
 }
 
-export default footer;
+export default Footer;

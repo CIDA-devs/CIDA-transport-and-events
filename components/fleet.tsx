@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-function fleet() {
+function Fleet() {
   return (
     <div className="bg-gradient-to-r from-[#362922] to-[#6B564B] mt-10 rounded-3xl lg:mx-10 mx-5 pb-10">
       {" "}
@@ -89,4 +89,4 @@ function fleet() {
   );
 }
 
-export default fleet;
+export default Fleet;

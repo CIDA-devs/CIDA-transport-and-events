@@ -5,7 +5,7 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { useInView } from "react-intersection-observer";
 
-export default function carousel() {
+export default function Carousell() {
   const [ref, inView] = useInView({
     triggerOnce: true, // Only trigger the animation once
   });
