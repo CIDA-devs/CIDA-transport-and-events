@@ -52,7 +52,7 @@ const About = () => {
 
 
       <section className=" my-[80px] flex justify-evenly items-center md:flex-row flex-col">
-        <div className="w-[500px] h-[300px] py-[30px] px-[40px] shadow-lg flex justify-center items-center flex-col mb-[40px]">
+        <div className="md:w-[500px] h-[300px] py-[30px] px-[40px] shadow-lg flex justify-center items-center flex-col mb-[40px]">
           <AiFillLike className="text-[40px] text-center text-gray-500" />
           <h3 className="text-[18px]  text-sky-500">Our Mission</h3>
           <p className="text-[15px] font-light text-gray-400">
@@ -62,7 +62,7 @@ const About = () => {
             name.
           </p>
         </div>
-        <div className="w-[500px] h-[300px] py-[30px] px-[40px] shadow-lg flex justify-center items-center flex-col mb-[40px]">
+        <div className="md:w-[500px] h-[300px] py-[30px] px-[40px] shadow-lg flex justify-center items-center flex-col mb-[40px]">
           <HiFaceSmile className="text-[40px] text-center text-gray-500" />
           <h3 className="text-[18px]  text-sky-500">Our Vision</h3>
           <p className="text-[15px] font-light text-gray-400">
