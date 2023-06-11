@@ -1,0 +1,25 @@
+.about-us-div {
+    background-image: url(../../public//pexels-rdne-stock-project-7551764.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us-div .text-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us-div .text-box h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+}
