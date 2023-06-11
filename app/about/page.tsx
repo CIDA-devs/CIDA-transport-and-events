@@ -42,7 +42,6 @@ const About = () => {
           </p>
         </section> */}
       </div>
-      
 
       <div className="about-us-div" id="about-us-div">
         <div className="text-box">
@@ -50,13 +49,12 @@ const About = () => {
         </div>
       </div>
 
-
       <section className=" my-[80px] flex justify-evenly items-center md:flex-row flex-col">
         <div className="md:w-[500px] h-[300px] py-[30px] px-[40px] shadow-lg flex justify-center items-center flex-col mb-[40px]">
           <AiFillLike className="text-[40px] text-center text-gray-500" />
           <h3 className="text-[18px]  text-sky-500">Our Mission</h3>
           <p className="text-[15px] font-light text-gray-400">
-          We are a team of Lorem next-next-link, it appears that there might
+            We are a team of Lorem next-next-link, it appears that there might
             be a typo in the package name. We are a team of Lorem
             next-next-link, it appears that there might be a typo in the package
             name.
@@ -66,7 +64,7 @@ const About = () => {
           <HiFaceSmile className="text-[40px] text-center text-gray-500" />
           <h3 className="text-[18px]  text-sky-500">Our Vision</h3>
           <p className="text-[15px] font-light text-gray-400">
-          We are a team of Lorem next-next-link, it appears that there might
+            We are a team of Lorem next-next-link, it appears that there might
             be a typo in the package name. We are a team of Lorem
             next-next-link, it appears that there might be a typo in the package
             name.
@@ -74,7 +72,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="py-[50px] px-[30px] flex justify-evenly items-center md:flex-row flex-col">
+      <section className="py-[50px] px-[30px] flex justify-evenly gap-10 items-center md:flex-row flex-col">
         <Image
           src={profile}
           alt="Img"
@@ -83,7 +81,7 @@ const About = () => {
 
         <div className="">
           <h2 className="text-center font-semi-bold text-[40px]">Our Story</h2>
-          <p className="text-[#181818] md:max-w-lg ">
+          <p className="text-[#181818] md:max-w-lg md:text-left text-center pt-3">
             Mr.Noah JD Anderson is a Ghanaian entrepreneur and a philanthropist
             with a foundation in Talent management. Mr Noah JD Anderson is the
             CEO of EMPIRE GROUP LTD a trade company with subsidiaries in Music
@@ -93,7 +91,6 @@ const About = () => {
         </div>
       </section>
       <main>
-
         <section className="mt-[150px]">
           <div className="my-[30px]">
             <h2 className="text-[#181818] text-[50px] font-extrabold text-center">
@@ -137,8 +134,12 @@ const About = () => {
                   />
                 </div>
                 {/* <h1 className="text-black opacity-100 group-hover:opacity-0 transition-opacity"> */}
-                <h1 className="text-black text-center font-semibold">CIDA CIDAIOUS</h1>
-                <h1 className="text-center italic text-sky-600">Secretary, CIDA</h1>
+                <h1 className="text-black text-center font-semibold">
+                  CIDA CIDAIOUS
+                </h1>
+                <h1 className="text-center italic text-sky-600">
+                  Secretary, CIDA
+                </h1>
               </div>
             </article>
 
@@ -174,8 +175,12 @@ const About = () => {
                   />
                 </div>
                 {/* <h1 className="text-black opacity-100 group-hover:opacity-0 transition-opacity"> */}
-                 <h1 className="text-black text-center font-semibold">CIDA CIDAIOUS</h1>
-                <h1 className="text-center italic text-sky-600">Secretary, CIDA</h1>
+                <h1 className="text-black text-center font-semibold">
+                  CIDA CIDAIOUS
+                </h1>
+                <h1 className="text-center italic text-sky-600">
+                  Secretary, CIDA
+                </h1>
               </div>
             </article>
 
@@ -211,8 +216,12 @@ const About = () => {
                   />
                 </div>
                 {/* <h1 className="text-black opacity-100 group-hover:opacity-0 transition-opacity"> */}
-                 <h1 className="text-black text-center font-semibold">CIDA CIDAIOUS</h1>
-                <h1 className="text-center italic text-sky-600">Secretary, CIDA</h1>
+                <h1 className="text-black text-center font-semibold">
+                  CIDA CIDAIOUS
+                </h1>
+                <h1 className="text-center italic text-sky-600">
+                  Secretary, CIDA
+                </h1>
               </div>
             </article>
 
@@ -248,8 +257,12 @@ const About = () => {
                   />
                 </div>
                 {/* <h1 className="text-black opacity-100 group-hover:opacity-0 transition-opacity"> */}
-                 <h1 className="text-black text-center font-semibold">CIDA CIDAIOUS</h1>
-                <h1 className="text-center italic text-sky-600">Secretary, CIDA</h1>
+                <h1 className="text-black text-center font-semibold">
+                  CIDA CIDAIOUS
+                </h1>
+                <h1 className="text-center italic text-sky-600">
+                  Secretary, CIDA
+                </h1>
               </div>
             </article>
 
@@ -285,8 +298,12 @@ const About = () => {
                   />
                 </div>
                 {/* <h1 className="text-black opacity-100 group-hover:opacity-0 transition-opacity"> */}
-                 <h1 className="text-black text-center font-semibold">CIDA CIDAIOUS</h1>
-                <h1 className="text-center italic text-sky-600">Secretary, CIDA</h1>
+                <h1 className="text-black text-center font-semibold">
+                  CIDA CIDAIOUS
+                </h1>
+                <h1 className="text-center italic text-sky-600">
+                  Secretary, CIDA
+                </h1>
               </div>
             </article>
           </section>
@@ -298,7 +315,7 @@ const About = () => {
           <h2 className="text-center font-semi-bold text-[30px] md:max-w-[500px]">
             Do you want to be part to team?
           </h2>
-          <p className="text-[#181818] md:max-w-[500px]">
+          <p className="text-[#181818] md:max-w-[500px] text-center p-5">
             We are a team of Lorem next-next-link, it appears that there might
             be a typo in the package name. We are a team of Lorem
             next-next-link, it appears that there might be a typo in the package

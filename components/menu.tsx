@@ -13,12 +13,12 @@ function Menu({ showMenu, active }: Props) {
       <div
         className={
           active
-            ? "lg:hidden flex-col flex fixed inset-0 justify-center left-1/4 bg-[#7F7ADE] backdrop-blur-lg gap-8 z-50 text-white items-center"
+            ? "lg:hidden flex-col flex fixed inset-0 justify-center left-1/4 bg-[#7F7ADE]  gap-8 z-50 text-white items-center text-form5"
             : "hidden"
         }
       >
         <AiOutlineCloseCircle className="text-5xl" onClick={showMenu} />
-        <Link href="/about#about">
+        <Link href="/about">
           <div>
             <h1
               className="cursor-pointer hover:underline text-4xl"
