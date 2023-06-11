@@ -2,5 +2,69 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.text-form {
+  opacity: 1;
+  transform: translateY(0px);
+  animation: fade-in 1s ease;
+}
+.text-form2 {
+  opacity: 1;
+  transform: translateY(0px);
+
+  animation: fade-in 1s ease 0.2s forwards;
+}
+.text-form3 {
+  opacity: 1;
+  transform: translateY(0px);
+
+  animation: fade-in 1s ease 0.4s forwards;
+}
+.text-form4 {
+  opacity: 1;
+  transform: translateY(0px);
+
+  animation: fade-in 1s ease 0.4s forwards;
+}
+@keyframes fade-in2 {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.text-form5 {
+  opacity: 1;
+  transform: translateX(0px);
+  animation: fade-in2 1s ease;
+}
+@keyframes fade-in3 {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.text-form6 {
+  opacity: 1;
+  transform: translateX(0px);
+  animation: fade-in3 1s ease;
+}
