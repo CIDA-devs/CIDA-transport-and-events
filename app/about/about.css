@@ -20,7 +20,21 @@
 }
 
 .about-us-div .text-box h2 {
-  font-size: 40px;
-  font-weight: 600;
-  color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+}
+
+
+.joinDiv {
+    background-image: url(../../public/pexels-pixabay-50675-min.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
