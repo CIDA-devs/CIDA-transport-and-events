@@ -11,7 +11,7 @@ function Navbar() {
     setActive(!active);
   };
   return (
-    <div className="absolute top-0 left-0 right-0">
+    <div className="bg-black fixed top-0 w-full z-50">
       <div className="flex justify-between items-center max-w-[1800px] mx-auto h-[80px] px-10">
         {/* logo */}
         <Link href="/">

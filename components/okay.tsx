@@ -2,12 +2,8 @@
 
 import React from "react";
 import Image from "next/image";
-import { useInView } from "react-intersection-observer";
 
 function About() {
-  const [ref, inView] = useInView({
-    triggerOnce: true, // Only trigger the animation once
-  });
   return (
     <div className="">
       <div className="bg-[#F2F3F8] pb-10">

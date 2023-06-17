@@ -28,7 +28,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "app/about"
+    "app/about",
+    "app/cars/[id].tsx"
   ],
   "exclude": ["node_modules"]
 }

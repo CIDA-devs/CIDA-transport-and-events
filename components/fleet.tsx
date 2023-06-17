@@ -1,7 +1,12 @@
+"use client";
 import React from "react";
 import Image from "next/image";
+import { useInView } from "react-intersection-observer";
 
 function Fleet() {
+  const [ref, inView] = useInView({
+    triggerOnce: true, // Only trigger the animation once
+  });
   return (
     <div className="bg-gradient-to-r from-[#362922] to-[#6B564B] mt-10 rounded-3xl lg:mx-10 mx-5 pb-10">
       {" "}
@@ -29,7 +34,12 @@ function Fleet() {
               {" "}
               <div className="bg-[#FBE9DA] rounded-xl p-3">
                 <Image
-                  className="xl:w-[400px] xl:h-[300px] lg:w-[350px] lg:h-[250px] w-[300px] h-[200px] transform hover:-scale-x-100 hover:scale-110 cursor-pointer"
+                  ref={ref}
+                  className={` ${
+                    inView
+                      ? "xl:w-[400px] xl:h-[300px] lg:w-[350px] lg:h-[250px] w-[300px] h-[200px] transform hover:-scale-x-100 hover:scale-110 cursor-pointer text-form"
+                      : ""
+                  }`}
                   src="/MERCEDES-BENZ_GLC-2022_main-removebg-preview.png"
                   width={400}
                   height={300}
@@ -48,7 +58,7 @@ function Fleet() {
               {" "}
               <div className="bg-[#FBE9DA]  rounded-xl p-3">
                 <Image
-                  className="transform -scale-x-100 xl:w-[400px] xl:h-[300px] lg:w-[350px] lg:h-[250px] w-[300px] h-[200px] hover:scale-110 cursor-pointer"
+                  className="transform -scale-x-100 xl:w-[400px] xl:h-[300px] lg:w-[350px] lg:h-[250px] w-[300px] h-[200px] hover:scale-110 cursor-pointer text-form"
                   src="/G-ClassModelImage-removebg-preview.png"
                   width={400}
                   height={300}
@@ -67,7 +77,7 @@ function Fleet() {
               {" "}
               <div className="bg-[#FBE9DA] rounded-xl p-3">
                 <Image
-                  className="xl:w-[400px] xl:h-[300px] lg:w-[350px] lg:h-[250px] w-[300px] h-[200px] hover:scale-110 cursor-pointer transform hover:-scale-x-100"
+                  className="xl:w-[400px] xl:h-[300px] lg:w-[350px] lg:h-[250px] w-[300px] h-[200px] hover:scale-110 cursor-pointer  hover:-scale-x-100 text-form"
                   src="/MERCEDES-BENZ_GLC-2022_main-removebg-preview.png"
                   width={400}
                   height={300}
