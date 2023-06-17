@@ -293,7 +293,7 @@ const About = () => {
         </section>
       </main>
 
-      <section className="bg-[#f2f2f2] py-[40px] flex justify-evenly items-center md:flex-row flex-col">
+      <section className="bg-[#f2f2f2] py-[40px] flex justify-evenly items-center md:flex-row flex-col joinDiv">
         <div className="">
           <h2 className="text-center font-semi-bold text-[30px] md:max-w-[500px]">
             Do you want to be part to team?
@@ -306,11 +306,11 @@ const About = () => {
           </p>
         </div>
 
-        <Image
+        {/* <Image
           src={profile}
           alt="Img"
           className="w-[300px] h-[300px] object-cover "
-        />
+        /> */}
       </section>
 
       <section className=" my-[80px] flex justify-evenly items-center md:flex-row flex-col">

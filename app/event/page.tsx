@@ -1,352 +1,216 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import Navbar from "../../components/navbar";
+import "../event/event.css";
 import Image from "next/image";
+import Link from "next/link";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { FaMap, FaMapMarker, FaPhone, FaSearch } from "react-icons/fa";
 
-import {
-  AiFillFacebook,
-  AiFillInstagram,
-  AiFillTwitterSquare,
-  AiFillLinkedin,
-} from "react-icons/ai";
-
-import profile from "../../components/images/profile.jpg";
-import profile2 from "../../components/images/profile2.jpg";
+import hall from "../../components/images/hall.jpg";
+import hall2 from "../../components/images/hall2.jpg";
+import birthday from "../../components/images/birthday.jpg";
+import seminar from "../../components/images/seminar.jpg";
+import conference from "../../components/images/conference.jpg";
 import next from "next/types";
 
 const About = () => {
+  const [search, setSearch] = useState("");
+  const bookings = [
+    {
+      id: 1,
+      img: hall,
+      hallName: "Red House Hall",
+      streetName: "Street Name",
+      phoneNumber: "0000 000 000",
+      bigHallPrice: "50,000",
+      lightPrice: "10,000",
+      flowerPrice: "2,000",
+      decor: "20,000",
+      category: "Wedding",
+    },
+    {
+      id: 2,
+      img: hall2,
+      hallName: "WeOutSide Hall",
+      streetName: "Street Name",
+      phoneNumber: "0000 000 000",
+      bigHallPrice: "70,000",
+      lightPrice: "0",
+      flowerPrice: "5,000",
+      decor: "30,000",
+      category: "Wedding",
+    },
+    {
+      id: 3,
+      img: birthday,
+      hallName: "Sprinter Pool",
+      streetName: "Street Name",
+      phoneNumber: "0000 000 000",
+      bigHallPrice: "50,000",
+      lightPrice: "10,000",
+      flowerPrice: "2,000",
+      decor: "20,000",
+      category: "Birthday",
+    },
+    {
+      id: 4,
+      img: seminar,
+      hallName: "Trojan Horse Hall",
+      streetName: "Street Name",
+      phoneNumber: "0000 000 000",
+      bigHallPrice: "70,000",
+      lightPrice: "0",
+      flowerPrice: "5,000",
+      decor: "5,000",
+      category: "Seminar",
+    },
+    {
+      id: 5,
+      img: conference,
+      hallName: "Starlight Conference Hall",
+      streetName: "Street Name",
+      phoneNumber: "0000 000 000",
+      bigHallPrice: "70,000",
+      lightPrice: "0",
+      flowerPrice: "5,000",
+      decor: "20,000",
+      category: "Conference",
+    },
+  ];
+
   return (
     <>
       <Navbar />
 
       {/* Carousel-Banner here */}
 
-      <main>
-        <section className="my-8 mx-16">
-          <p className="text-[#181818] text-center text-2xl">
-            Want to know more about us? We <br /> render services like car
-            rentals and event planning services. It seems like youre trying to
-            install the next-next-link package instead of next/link. However,
-            based on the package name you provided, next-next-link, it appears
-            that there might be a typo in the package name. you provided,
-            next-next-link, it appears that there might be a typo in the package
-            name. you provided, next-next-link, it appears that there might be a
-            typo in the package name.
-          </p>
-        </section>
+      <div className="bg-gradient py-32 px-28 ">
+        <h2 className="text-white text-[60px] font-extrabold md:w-[50%] ">
+          Welcome to the events Section.
+        </h2>
+        <p className="text-white text-[18px] mb-[30px]">
+          Enjoy our varieties of halls and decor and book an appointment.
+        </p>
 
-        <section className=" py-12 flex justify-evenly items-start">
-          {/*Mission and Vision statements */}
-          <div className="relative">
-            <hr className="h-[90vh] w-[2px] bg-cyan-950 absolute left-[15%] hidden md:block" />
-            <div className="w-[20px] h-[20px] bg-white border-cyan-950 border-[6px] rounded-full hidden md:block absolute -left-[9px] top-[100px]"></div>
-            <div className="w-[20px] h-[20px] bg-white border-cyan-950 border-[6px] rounded-full hidden md:block absolute -left-[9px] top-[420px]"></div>
-          </div>
-          <div>
-            <article className="relative mb-[80px]">
-              <div className="bg-white w-[20px] h-[20px] rotate-45 absolute -left-[10px] top-[40%]"></div>
-              <div className=" shadow-lg w-[350px] md:w-[657px] h-[250px] px-[30px] py-[30px] hover:shadow-2xl">
-                <h2 className="text-sky-400 text-[30px] font-bold">
-                  Our Mission
-                </h2>
-                <p>
-                  It seems like youre trying to install the next-next-link
-                  package instead of next/link. However, based on the package
-                  name you provided, next-next-link, it appears that there might
-                  be a typo in the package name. you provided, next-next-link,
-                  it appears that there might be a typo in the package name. you
-                  provided, next-next-link, it appears that there might be a
-                  typo in the package name.
-                </p>
-              </div>
-            </article>
+        <Link
+          href="#bookNow"
+          className="bg-yellow-500  py-[15px] px-[23px] rounded-xl text-white shadow-lg group:hover hover:bg-white hover:text-yellow-500 "
+        >
+          Book Now
+        </Link>
+      </div>
 
-            <article className="relative">
-              <div className="bg-white w-[20px] h-[20px] rotate-45 absolute -left-[10px] top-[40%]"></div>
-              <div className=" shadow-lg w-[350px] md:w-[657px] h-[250px] px-[30px] py-[30px] hover:shadow-2xl">
-                <h2 className="text-sky-400 text-[30px] font-bold">
-                  Our Vision
-                </h2>
-                <p>
-                  It seems like youre trying to install the next-next-link
-                  package instead of next/link. However, based on the package
-                  name you provided, next-next-link, it appears that there might
-                  be a typo in the package name. you provided, next-next-link,
-                  it appears that there might be a typo in the package name. you
-                  provided, next-next-link, it appears that there might be a
-                  typo in the package name.
-                </p>
-              </div>
-            </article>
-          </div>
-        </section>
+      <section className="my-32 mx-16 md:flex justify-evenly items-center">
+        <div>
+          <h3 className="text-center font-medium text-yellow-500 uppercase">
+            {" "}
+            Get Up to 10% discount if you book before June 23rd!
+          </h3>
+          <h2 className="text-center text-[30px] font-extrabold text-[#270159] uppercase">
+            Book your Hall Now
+          </h2>
+        </div>
 
-        <section className="mt-[150px]">
-          <div className="my-[30px]">
-            <h2 className="text-[#181818] text-[50px] font-extrabold text-center">
-              Meet our team
-            </h2>
-            <p className="text-[#181818] text-center font-medium text-[20px] max-w-[500px] md:max-w-[100%]">
-              Meet our diverse team of world-class creators and event planners.
-            </p>
-          </div>
+        <div className=" relative">
+          <input
+            type="text"
+            name="search"
+            id="search"
+            className="w-[100%] py-[20px] px-[20px] shadow-xl self-center rounded-md border-[#d2d2d2] border-2"
+            onChange={(e) => {
+              setSearch(e.target.value);
+            }}
+          />
+          {/* <FaSearch className="absolute left-[85%] bottom-[30%] text-[#270159] group-hover: hover:text-yellow-500 cursor-pointer" /> */}
+        </div>
+      </section>
 
-          <section className="flex justify-evenly items-start flex-wrap my-8 md:mx-[150px] mx-0">
-            <article className="w-[300px] h-[400px] shadow-md relative group pb-[50px] rounded-lg overflow-hidden mb-[80px]">
-              <div className="absolute inset-0 bg-black w-[300px] h-[400px] opacity-0 group-hover:opacity-60 transition-opacity flex justify-center items-center z-50">
-                {/* Overlay content */}
-                <div className=" flex justify-evenly items-center text-white">
-                  <a href="http://">
-                    <AiFillInstagram className="text-[25px] opacity-100 mx-[5px]" />
-                  </a>
+      <section className="my-24 mx-28">
+        {bookings
+          .filter((item) => {
+            if (search == "") {
+              return item;
+            } else if (
+              item.category.toLowerCase().includes(search.toLowerCase()) ||
+              item.bigHallPrice.toLowerCase().includes(search.toLowerCase()) ||
+              item.decor
+                .toLowerCase()
 
-                  <a href="http://">
-                    <AiFillFacebook className="text-[25px] opacity-100 mx-[5px]" />
-                  </a>
+                .includes(search.toLowerCase())
+            ) {
+              return item;
+            }
+          })
 
-                  <a href="http://">
-                    <AiFillTwitterSquare className="text-[25px] opacity-100 mx-[5px]" />
-                  </a>
-                  <a href="http://">
-                    <AiFillLinkedin className="text-[25px] opacity-100 mx-[5px]" />
-                  </a>
-                </div>
-              </div>
-
-              <div className=" z-10">
-                {/* div content */}
-                <div className="w-[300px] h-[340px] overflow-hidden">
+          .map((booking) => {
+            return (
+              <>
+                <div className="md:flex justify-center items-start mb-[70px]">
                   <Image
-                    loading="lazy"
-                    className="w-[100%]"
-                    src={profile}
-                    alt=""
+                    src={booking.img}
+                    alt="Img"
+                    className="w-[500px] h-[300px] object-cover mb-[30px] rounded-2xl"
                   />
+
+                  <div className="md: ml-[35px] md:w-[35%]">
+                    <h2 className="font-bold text-[#270159] uppercase text-[22px]">
+                      {booking.hallName}
+                    </h2>
+                    <p></p>
+                    <p className="text-center  text-black flex items-center">
+                      <FaMapMarker className="text-yellow-500 mr-1" />
+                      {booking.streetName}
+                    </p>
+
+                    <p className="text-center  text-black  flex items-center">
+                      <FaPhone className="text-yellow-500 mr-1" />
+                      {booking.phoneNumber}
+                    </p>
+
+                    <div className=" mt-[30px]">
+                      <h2 className="font-medium text-[#270159] uppercase text-[22px]">
+                        Rates
+                      </h2>
+
+                      <p>
+                        Big Hall -{" "}
+                        <span className="text-yellow-500 font-bold">$</span>{" "}
+                        {booking.bigHallPrice}
+                      </p>
+                      <p>
+                        Chandeliers -{" "}
+                        <span className="text-yellow-500 font-bold">$</span>{" "}
+                        {booking.lightPrice}
+                      </p>
+                      <p>
+                        Flowers -{" "}
+                        <span className="text-yellow-500 font-bold">$</span>{" "}
+                        {booking.flowerPrice}
+                      </p>
+
+                      <p>
+                        Decors -{" "}
+                        <span className="text-yellow-500 font-bold">$</span>{" "}
+                        {booking.decor}
+                      </p>
+                    </div>
+
+                    <button className="bg-yellow-500 mt-5 py-[10px] px-[23px] rounded-xl text-white shadow-lg group:hover hover:bg-[#270159] hover:text-white">
+                      Book
+                    </button>
+                  </div>
                 </div>
-                {/* <h1 className="text-black opacity-100 group-hover:opacity-0 transition-opacity"> */}
-                <h1 className="text-black text-center">CIDA CIDAIOUS</h1>
-                <h1 className="text-black text-center">Secretary, CIDA</h1>
-              </div>
-            </article>
+              </>
+            );
+          })}
+      </section>
 
-            <article className="w-[300px] h-[400px] shadow-md relative group pb-[50px] rounded-lg overflow-hidden mb-[80px]">
-              <div className="absolute inset-0 bg-black w-[300px] h-[400px] opacity-0 group-hover:opacity-60 transition-opacity flex justify-center items-center z-50">
-                {/* Overlay content */}
-                <div className=" flex justify-evenly items-center text-white">
-                  <a href="http://">
-                    <AiFillInstagram className="text-[25px] opacity-100 mx-[5px]" />
-                  </a>
+      <section className="bg-[#270159] py-[40px]">
 
-                  <a href="http://">
-                    <AiFillFacebook className="text-[25px] opacity-100 mx-[5px]" />
-                  </a>
-
-                  <a href="http://">
-                    <AiFillTwitterSquare className="text-[25px] opacity-100 mx-[5px]" />
-                  </a>
-                  <a href="http://">
-                    <AiFillLinkedin className="text-[25px] opacity-100 mx-[5px]" />
-                  </a>
-                </div>
-              </div>
-
-              <div className=" z-10">
-                {/* div content */}
-                <div className="w-[300px] h-[340px] overflow-hidden">
-                  <Image
-                    loading="lazy"
-                    className="w-[100%]"
-                    src={profile2}
-                    alt=""
-                  />
-                </div>
-                {/* <h1 className="text-black opacity-100 group-hover:opacity-0 transition-opacity"> */}
-                <h1 className="text-black text-center">CIDA CIDAIOUS</h1>
-                <h1 className="text-black text-center">Secretary, CIDA</h1>
-              </div>
-            </article>
-
-            <article className="w-[300px] h-[400px] shadow-md relative group pb-[50px] rounded-lg overflow-hidden mb-[80px]">
-              <div className="absolute inset-0 bg-black w-[300px] h-[400px] opacity-0 group-hover:opacity-60 transition-opacity flex justify-center items-center z-50">
-                {/* Overlay content */}
-                <div className=" flex justify-evenly items-center text-white">
-                  <a href="http://">
-                    <AiFillInstagram className="text-[25px] opacity-100 mx-[5px]" />
-                  </a>
-
-                  <a href="http://">
-                    <AiFillFacebook className="text-[25px] opacity-100 mx-[5px]" />
-                  </a>
-
-                  <a href="http://">
-                    <AiFillTwitterSquare className="text-[25px] opacity-100 mx-[5px]" />
-                  </a>
-                  <a href="http://">
-                    <AiFillLinkedin className="text-[25px] opacity-100 mx-[5px]" />
-                  </a>
-                </div>
-              </div>
-
-              <div className=" z-10">
-                {/* div content */}
-                <div className="w-[300px] h-[340px] overflow-hidden">
-                  <Image
-                    loading="lazy"
-                    className="w-[100%]"
-                    src={profile}
-                    alt=""
-                  />
-                </div>
-                {/* <h1 className="text-black opacity-100 group-hover:opacity-0 transition-opacity"> */}
-                <h1 className="text-black text-center">CIDA CIDAIOUS</h1>
-                <h1 className="text-black text-center">Secretary, CIDA</h1>
-              </div>
-            </article>
-
-            <article className="w-[300px] h-[400px] shadow-md relative group pb-[50px] rounded-lg overflow-hidden mb-[80px]">
-              <div className="absolute inset-0 bg-black w-[300px] h-[400px] opacity-0 group-hover:opacity-60 transition-opacity flex justify-center items-center z-50">
-                {/* Overlay content */}
-                <div className=" flex justify-evenly items-center text-white">
-                  <a href="http://">
-                    <AiFillInstagram className="text-[25px] opacity-100 mx-[5px]" />
-                  </a>
-
-                  <a href="http://">
-                    <AiFillFacebook className="text-[25px] opacity-100 mx-[5px]" />
-                  </a>
-
-                  <a href="http://">
-                    <AiFillTwitterSquare className="text-[25px] opacity-100 mx-[5px]" />
-                  </a>
-                  <a href="http://">
-                    <AiFillLinkedin className="text-[25px] opacity-100 mx-[5px]" />
-                  </a>
-                </div>
-              </div>
-
-              <div className=" z-10">
-                {/* div content */}
-                <div className="w-[300px] h-[340px] overflow-hidden">
-                  <Image
-                    loading="lazy"
-                    className="w-[100%]"
-                    src={profile2}
-                    alt=""
-                  />
-                </div>
-                {/* <h1 className="text-black opacity-100 group-hover:opacity-0 transition-opacity"> */}
-                <h1 className="text-black text-center">CIDA CIDAIOUS</h1>
-                <h1 className="text-black text-center">Secretary, CIDA</h1>
-              </div>
-            </article>
-
-            <article className="w-[300px] h-[400px] shadow-md relative group pb-[50px] rounded-lg overflow-hidden mb-[80px]">
-              <div className="absolute inset-0 bg-black w-[300px] h-[400px] opacity-0 group-hover:opacity-60 transition-opacity flex justify-center items-center z-50">
-                {/* Overlay content */}
-                <div className=" flex justify-evenly items-center text-white">
-                  <a href="http://">
-                    <AiFillInstagram className="text-[25px] opacity-100 mx-[5px]" />
-                  </a>
-
-                  <a href="http://">
-                    <AiFillFacebook className="text-[25px] opacity-100 mx-[5px]" />
-                  </a>
-
-                  <a href="http://">
-                    <AiFillTwitterSquare className="text-[25px] opacity-100 mx-[5px]" />
-                  </a>
-                  <a href="http://">
-                    <AiFillLinkedin className="text-[25px] opacity-100 mx-[5px]" />
-                  </a>
-                </div>
-              </div>
-
-              <div className=" z-10">
-                {/* div content */}
-                <div className="w-[300px] h-[340px] overflow-hidden">
-                  <Image
-                    loading="lazy"
-                    className="w-[100%]"
-                    src={profile}
-                    alt=""
-                  />
-                </div>
-                {/* <h1 className="text-black opacity-100 group-hover:opacity-0 transition-opacity"> */}
-                <h1 className="text-black text-center">CIDA CIDAIOUS</h1>
-                <h1 className="text-black text-center">Secretary, CIDA</h1>
-              </div>
-            </article>
-
-            <article className="w-[300px] h-[400px] shadow-md relative group pb-[50px] rounded-lg overflow-hidden mb-[80px]">
-              <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-60 transition-opacity flex justify-center items-center z-50">
-                {/* Overlay content */}
-                <div className=" flex justify-evenly items-center text-white">
-                  <a href="http://">
-                    <AiFillInstagram className="text-[25px] opacity-100 mx-[5px]" />
-                  </a>
-
-                  <a href="http://">
-                    <AiFillFacebook className="text-[25px] opacity-100 mx-[5px]" />
-                  </a>
-
-                  <a href="http://">
-                    <AiFillTwitterSquare className="text-[25px] opacity-100 mx-[5px]" />
-                  </a>
-                  <a href="http://">
-                    <AiFillLinkedin className="text-[25px] opacity-100 mx-[5px]" />
-                  </a>
-                </div>
-              </div>
-
-              <div className=" z-10">
-                {/* div content */}
-                <div className="w-[300px] h-[340px] overflow-hidden">
-                  <Image loading="lazy" src={profile2} alt="" />
-                </div>
-                {/* <h1 className="text-black opacity-100 group-hover:opacity-0 transition-opacity"> */}
-                <h1 className="text-black text-center">CIDA CIDAIOUS</h1>
-                <h1 className="text-black text-center">Secretary, CIDA</h1>
-              </div>
-            </article>
-
-            <article className="w-[300px] h-[400px] shadow-md relative group pb-[50px] rounded-lg overflow-hidden mb-[80px]">
-              <div className="absolute inset-0 bg-black w-[300px] h-[400px] opacity-0 group-hover:opacity-60 transition-opacity flex justify-center items-center z-50">
-                {/* Overlay content */}
-                <div className=" flex justify-evenly items-center text-white">
-                  <a href="http://">
-                    <AiFillInstagram className="text-[25px] opacity-100 mx-[5px]" />
-                  </a>
-
-                  <a href="http://">
-                    <AiFillFacebook className="text-[25px] opacity-100 mx-[5px]" />
-                  </a>
-
-                  <a href="http://">
-                    <AiFillTwitterSquare className="text-[25px] opacity-100 mx-[5px]" />
-                  </a>
-                  <a href="http://">
-                    <AiFillLinkedin className="text-[25px] opacity-100 mx-[5px]" />
-                  </a>
-                </div>
-              </div>
-
-              <div className=" z-10">
-                {/* div content */}
-                <div className="w-[300px] h-[340px] overflow-hidden">
-                  <Image
-                    loading="lazy"
-                    className="w-[100%]"
-                    src={profile}
-                    alt=""
-                  />
-                </div>
-                {/* <h1 className="text-black opacity-100 group-hover:opacity-0 transition-opacity"> */}
-                <h1 className="text-black text-center">CIDA CIDAIOUS</h1>
-                <h1 className="text-black text-center">Secretary, CIDA</h1>
-              </div>
-            </article>
-          </section>
-        </section>
-      </main>
+      </section>
     </>
   );
 };

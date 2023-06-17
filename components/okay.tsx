@@ -3,6 +3,8 @@
 import React from "react";
 import Image from "next/image";
 import { useInView } from "react-intersection-observer";
+import Link from "next/link";
+
 
 function about() {
   const [ref, inView] = useInView({
@@ -15,9 +17,9 @@ function about() {
           <h1 className="md:text-2xl text-sm font-semibold">
             OUR EVENT PLANNING
           </h1>
-          <h1 className="border md:w-[120px] md:h-[50px] w-[100px] h-[30px] flex justify-center rounded-[20px] items-center text-black md:text-sm text-xs hover:bg-[#E6E1FF] cursor-pointer">
+          <Link href="/event" className="border md:w-[120px] md:h-[50px] w-[100px] h-[30px] flex justify-center rounded-[20px] items-center text-black md:text-sm text-xs hover:bg-[#E6E1FF] cursor-pointer">
             View All
-          </h1>
+          </Link>
         </div>
         <div className="max-w-[1800px] mx-auto grid md:grid-cols-2 xl:grid-cols-4 place-items-center grid-cols-1  gap-8 px-10 md:py-5 pb-10">
           {" "}
