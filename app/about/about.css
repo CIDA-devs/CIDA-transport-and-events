@@ -1,21 +1,22 @@
 .about-us-div {
-    background-image: url(../../public//pexels-rdne-stock-project-7551764.jpg);
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: darken;
+  background-image: linear-gradient(rgba(1, 1, 1, 0.52), rgba(40, 36, 39, 0.73)),
+    url(../../public//pexels-rdne-stock-project-7551764.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
 
-    height: 60vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-us-div .text-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-us-div .text-box h2 {

@@ -6,7 +6,7 @@ import { useInView } from "react-intersection-observer";
 import Link from "next/link";
 
 
-function about() {
+function About() {
   const [ref, inView] = useInView({
     triggerOnce: true, // Only trigger the animation once
   });
@@ -94,4 +94,4 @@ function about() {
   );
 }
 
-export default about;
+export default About;
