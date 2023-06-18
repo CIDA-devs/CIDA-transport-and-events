@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { useInView } from "react-intersection-observer";
+import Link from "next/link";
 
 function Fleet() {
   const [ref, inView] = useInView({
@@ -24,9 +25,11 @@ function Fleet() {
               expedita.
             </h1>
             <div className="flex justify-center pt-5 lg:pt-0">
-              <h1 className="border md:w-[120px] md:h-[50px] w-[100px] h-[30px] flex justify-center rounded-[20px] items-center text-white hover:text-black md:text-sm text-xs hover:bg-[#E6E1FF] cursor-pointer">
-                View All
-              </h1>
+              <Link href="/cars">
+                <h1 className="border md:w-[120px] md:h-[50px] w-[100px] h-[30px] flex justify-center rounded-[20px] items-center text-white hover:text-black md:text-sm text-xs hover:bg-[#E6E1FF] cursor-pointer">
+                  View All
+                </h1>
+              </Link>
             </div>
           </div>
           <div className=" flex flex-col lg:flex-row items-center justify-between gap-10 pt-14">
@@ -37,7 +40,7 @@ function Fleet() {
                   ref={ref}
                   className={` ${
                     inView
-                      ? "xl:w-[400px] xl:h-[300px] lg:w-[350px] lg:h-[250px] w-[300px] h-[200px] transform hover:-scale-x-100 hover:scale-110 cursor-pointer text-form"
+                      ? "xl:w-[400px] xl:h-[300px] lg:w-[350px] lg:h-[250px] w-[300px] h-[200px] transform hover:-scale-x-100 hover:scale-110 cursor-pointer"
                       : ""
                   }`}
                   src="/MERCEDES-BENZ_GLC-2022_main-removebg-preview.png"
@@ -58,7 +61,7 @@ function Fleet() {
               {" "}
               <div className="bg-[#FBE9DA]  rounded-xl p-3">
                 <Image
-                  className="transform -scale-x-100 xl:w-[400px] xl:h-[300px] lg:w-[350px] lg:h-[250px] w-[300px] h-[200px] hover:scale-110 cursor-pointer text-form"
+                  className="transform -scale-x-100 xl:w-[400px] xl:h-[300px] lg:w-[350px] lg:h-[250px] w-[300px] h-[200px] hover:scale-110 cursor-pointer "
                   src="/G-ClassModelImage-removebg-preview.png"
                   width={400}
                   height={300}
@@ -77,7 +80,7 @@ function Fleet() {
               {" "}
               <div className="bg-[#FBE9DA] rounded-xl p-3">
                 <Image
-                  className="xl:w-[400px] xl:h-[300px] lg:w-[350px] lg:h-[250px] w-[300px] h-[200px] hover:scale-110 cursor-pointer  hover:-scale-x-100 text-form"
+                  className="xl:w-[400px] xl:h-[300px] lg:w-[350px] lg:h-[250px] w-[300px] h-[200px] hover:scale-110 cursor-pointer  hover:-scale-x-100 "
                   src="/MERCEDES-BENZ_GLC-2022_main-removebg-preview.png"
                   width={400}
                   height={300}
