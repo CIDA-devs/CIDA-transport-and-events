@@ -4,6 +4,7 @@ import Carpage from "@/components/carpage";
 import Navbar from "@/components/navbar2";
 import Image from "next/image";
 import Footer from "@/components/footer";
+import Link from "next/link";
 
 function page() {
   return (
@@ -12,7 +13,8 @@ function page() {
       <Carpage />
       <div className="max-w-7xl mx-auto px-8 grid gap-4 sm:grid-cols-2 md:grid-cols-3 mt-10">
         {cars.map((car) => (
-          <div
+          <Link
+            href={`../car/${car.id}`}
             key={car.id}
             className="border p-5 hover:cursor-pointer hover:scale-105 transition-transform ease-out duration-200 hover:bg-[#FBE9DA]"
           >
@@ -23,9 +25,7 @@ function page() {
               <h1 className="font-bold">{car.name}</h1>
               <h1>GH₵{car.price}/day</h1>
             </div>
-
-            <div>{car.details}</div>
-          </div>
+          </Link>
         ))}
       </div>
       <Footer />
