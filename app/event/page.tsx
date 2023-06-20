@@ -87,11 +87,11 @@ const About = () => {
 
       {/* Carousel-Banner here */}
 
-      <div className="bg-gradient py-32 px-28 ">
+      <div className="bg-gradient py-32 px-28 font-poppins">
         <h2 className="text-white text-[60px] font-extrabold md:w-[50%] ">
           Welcome to the events Section.
         </h2>
-        <p className="text-white text-[18px] mb-[30px]">
+        <p className="text-white text-[18px] mb-[30px] font-poppins">
           Enjoy our varieties of halls and decor and book an appointment.
         </p>
 
@@ -103,7 +103,7 @@ const About = () => {
         </Link>
       </div>
 
-      <section className="my-32 mx-16 md:flex justify-evenly items-center">
+      <section className="my-32 mx-16 md:flex justify-evenly items-center font-poppins">
         <div>
           <h3 className="text-center font-medium text-yellow-500 uppercase">
             {" "}
@@ -116,7 +116,7 @@ const About = () => {
 
         <div className=" relative">
           <input
-            type="text"
+            type="search"
             name="search"
             id="search"
             className="w-[100%] py-[20px] px-[20px] shadow-xl self-center rounded-md border-[#d2d2d2] border-2"
