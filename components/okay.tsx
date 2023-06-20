@@ -2,14 +2,9 @@
 
 import React from "react";
 import Image from "next/image";
-import { useInView } from "react-intersection-observer";
 import Link from "next/link";
 
-
 function About() {
-  const [ref, inView] = useInView({
-    triggerOnce: true, // Only trigger the animation once
-  });
   return (
     <div className="">
       <div className="bg-[#F2F3F8] pb-10">
@@ -17,7 +12,10 @@ function About() {
           <h1 className="md:text-2xl text-sm font-semibold">
             OUR EVENT PLANNING
           </h1>
-          <Link href="/event" className="border md:w-[120px] md:h-[50px] w-[100px] h-[30px] flex justify-center rounded-[20px] items-center text-black md:text-sm text-xs hover:bg-[#E6E1FF] cursor-pointer">
+          <Link
+            href="/event"
+            className="border md:w-[120px] md:h-[50px] w-[100px] h-[30px] flex justify-center rounded-[20px] items-center text-black md:text-sm text-xs hover:bg-[#E6E1FF] cursor-pointer"
+          >
             View All
           </Link>
         </div>

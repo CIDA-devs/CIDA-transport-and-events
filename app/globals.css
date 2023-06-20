@@ -36,7 +36,7 @@
   opacity: 1;
   transform: translateY(0px);
 
-  animation: fade-in 1s ease 0.4s forwards;
+  animation: fade-in 1s ease 0.6s forwards;
 }
 @keyframes fade-in2 {
   0% {
@@ -68,4 +68,9 @@
   opacity: 1;
   transform: translateX(0px);
   animation: fade-in3 1s ease;
+}
+.text-form7 {
+  opacity: 1;
+  transform: translateX(0px);
+  animation: fade-in2 1s ease 0.2s forwards;
 }
