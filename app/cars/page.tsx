@@ -14,8 +14,8 @@ function page() {
       <div className="max-w-7xl mx-auto px-8 grid gap-4 sm:grid-cols-2 md:grid-cols-3 mt-10">
         {cars.map((car) => (
           <Link
-            href={`../car/${car.id}`}
             key={car.id}
+            href={`../car/${car.id}`}
             className="border p-5 hover:cursor-pointer hover:scale-105 transition-transform ease-out duration-200 hover:bg-[#FBE9DA]"
           >
             <div className="flex justify-center">
