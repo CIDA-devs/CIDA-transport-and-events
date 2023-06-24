@@ -18,7 +18,7 @@ function Page({ params: { id } }: Props) {
   }
 
   return (
-    <div className="max-w-7xl mx-auto pt-28 ">
+    <div className="max-w-7xl mx-auto lg:pt-28 pt-5">
       <h1 className="text-5xl font-bold p-5 lg:text-left text-center">
         Check Out
       </h1>
@@ -29,7 +29,7 @@ function Page({ params: { id } }: Props) {
         <div className="lg:w-[50%] p-5 text-center">
           <h1 className="font-bold text-4xl">{selectedCar.name}</h1>
           <h1 className="text-2xl pt-5">GH₵{selectedCar.price}/day</h1>
-          <div className=" text-sm pt-10">{selectedCar.details}</div>
+          <div className=" text-sm pt-10 text-left">{selectedCar.details}</div>
           <div className="bg-black text-center w-full text-white mt-5 p-3 text-xl hover:bg-[#FBE9DA] transition-transform ease-out duration-200 hover:text-black hover:border cursor-pointer rounded-lg">
             Rent
           </div>
