@@ -28,7 +28,7 @@ const Event = () => {
       {/* Carousel-Banner here */}
 
       <div className="bg-gradient py-32 px-8 font-poppins h-[100%]">
-        <h2 className="text-white text-[60px] font-extrabold md:w-[50%] text-form">
+        <h2 className="text-white lg:text-[60px] text-[40px] font-extrabold md:w-[50%] text-form">
           Welcome to the events Section.
         </h2>
         <p className="text-white text-[18px] mb-[30px] font-poppins ">
@@ -124,7 +124,7 @@ const Event = () => {
                     src={booking.img}
                     alt="Img"
                     ref={ref}
-                    className={`w-[500px] h-[300px] object-cover mb-[30px] rounded-2xl ${
+                    className={` object-cover mb-[30px] rounded-2xl ${
                       inView ? "text-form6" : ""
                     }`}
                   />
