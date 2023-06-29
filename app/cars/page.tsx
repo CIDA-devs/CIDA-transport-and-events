@@ -22,7 +22,7 @@ function page() {
               <Image src={car.image} width={500} height={500} alt="" />
             </div>
             <div className="flex items-center justify-between">
-              <h1 className="font-bold">{car.name}</h1>
+              <h1 className="font-bold">{car.carname}</h1>
               <h1>GH₵{car.price}/day</h1>
             </div>
           </Link>
