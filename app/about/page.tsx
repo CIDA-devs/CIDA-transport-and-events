@@ -67,7 +67,7 @@ const About = () => {
           <p className="text-[15px] font-light text-gray-400">
             We are a team of Lorem next-next-link, it appears that there might
             be a typo in the package name. We are a team of Lorem
-            next-next-link, it appears that there might be a typo in the package
+            next-next-link, it appears that there might be a typo in the packageh
             name.
           </p>
         </div>
