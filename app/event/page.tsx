@@ -8,13 +8,18 @@ import Link from "next/link";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { FaMap, FaMapMarker, FaPhone, FaSearch } from "react-icons/fa";
+import { ImCalendar } from "react-icons/im";
+import { useInView } from "react-intersection-observer";
 
 import { bookings } from "./bookings";
 import next from "next/types";
+import Footer from "@/components/footer";
 
 const About = () => {
   const [search, setSearch] = useState("");
- 
+  const [ref, inView] = useInView({
+    triggerOnce: true, // Only trigger the animation once
+  });
 
   return (
     <>
@@ -22,11 +27,11 @@ const About = () => {
 
       {/* Carousel-Banner here */}
 
-      <div className="bg-gradient py-32 px-28 font-poppins">
-        <h2 className="text-white text-[60px] font-extrabold md:w-[50%] ">
+      <div className="bg-gradient py-32 px-8 font-poppins h-[100%]">
+        <h2 className="text-white text-[60px] font-extrabold md:w-[50%] text-form">
           Welcome to the events Section.
         </h2>
-        <p className="text-white text-[18px] mb-[30px] font-poppins">
+        <p className="text-white text-[18px] mb-[30px] font-poppins ">
           Enjoy our varieties of halls and decor and book an appointment.
         </p>
 
@@ -36,11 +41,42 @@ const About = () => {
         >
           Book Now
         </Link>
+        <section className="pt-24 pb-28 xl:px-18 lg:px-5 px-10 max-w-[1800px] mx-auto text-form2">
+          <div className="p-5 rounded-xl  bg-white/40 flex lg:flex-row flex-col justify-center items-center gap-10">
+            <div className="text-white">
+              <h1 className="text-white/50 text-center">Booking Address</h1>
+              <p>From: address,hotel,airport</p>
+            </div>
+            <div className="bg-white/40 lg:h-[50px] lg:w-[2px] w-full h-[2px]"></div>
+            <div className="text-white">
+              <h1 className="text-white/50 text-center">Drop Off Address</h1>
+              <p>Distan,Hourly,Flat Rate</p>
+            </div>
+            <div className="bg-white/40 lg:h-[50px] lg:w-[2px] w-full h-[2px]"></div>
+            <div className="text-white">
+              <h1 className="text-white/50 text-center">Booking Date</h1>
+              <p>April 16,2023</p>
+            </div>
+            <div className="bg-white/40 lg:h-[50px] lg:w-[2px] w-full h-[2px]"></div>
+            <div className="text-white">
+              <h1 className="text-white/50 text-center">Booking Time</h1>
+              <p>12:25am</p>
+            </div>
+            <div className="bg-white/40 lg:h-[50px] lg:w-[2px] w-full h-[2px]"></div>
+            <div className="text-center bg-yellow-500 p-3 rounded-md">
+              <div className="flex justify-center text-3xl text-white">
+                <ImCalendar />
+              </div>
+
+              <p className="pt-2 text-white">Book Now</p>
+            </div>
+          </div>
+        </section>
       </div>
 
-      <section className="my-32 mx-16 md:flex justify-evenly items-center font-poppins">
+      <section className="my-32 mx-14 md:flex justify-evenly items-center font-poppins">
         <div>
-          <h3 className="text-center font-medium text-yellow-500 uppercase">
+          <h3 className="text-center font-medium text-yellow-500 uppercase text-form5">
             {" "}
             Get Up to 10% discount if you book before June 23rd!
           </h3>
@@ -87,10 +123,18 @@ const About = () => {
                   <Image
                     src={booking.img}
                     alt="Img"
-                    className="w-[500px] h-[300px] object-cover mb-[30px] rounded-2xl"
+                    ref={ref}
+                    className={`w-[500px] h-[300px] object-cover mb-[30px] rounded-2xl ${
+                      inView ? "text-form6" : ""
+                    }`}
                   />
 
-                  <div className="md: ml-[35px] md:w-[35%]">
+                  <div
+                    ref={ref}
+                    className={`md: ml-[35px] md:w-[35%] ${
+                      inView ? "text-form5" : ""
+                    }`}
+                  >
                     <h2 className="font-bold text-[#270159] uppercase text-[22px]">
                       {booking.hallName}
                     </h2>
@@ -133,9 +177,11 @@ const About = () => {
                       </p>
                     </div>
 
-                    <button className="bg-yellow-500 mt-5 py-[10px] px-[23px] rounded-xl text-white shadow-lg group:hover hover:bg-[#270159] hover:text-white">
-                      Book
-                    </button>
+                    <Link href={`../booking/${booking.id}`}>
+                      <button className="bg-yellow-500 mt-5 py-[10px] px-[23px] rounded-xl text-white shadow-lg group:hover hover:bg-[#270159] hover:text-white">
+                        Book
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </>
@@ -143,9 +189,7 @@ const About = () => {
           })}
       </section>
 
-      <section className="bg-[#270159] py-[40px]">
-
-      </section>
+      <Footer />
     </>
   );
 };

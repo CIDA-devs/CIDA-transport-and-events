@@ -36,15 +36,22 @@ function Navbar() {
                 About
               </h1>
             </Link>
-            <h1 className="border w-[120px] h-[40px] flex justify-center rounded-[20px] items-center text-white md:text-[18px] text-sm hover:bg-[#E6E1FF] hover:text-black font-semibold cursor-pointer">
-              Travel
+          
+          <Link href="/event">
+          <h1 className="border w-[120px] h-[40px] flex justify-center rounded-[20px] items-center text-white md:text-[18px] text-sm hover:bg-[#E6E1FF] hover:text-black font-semibold cursor-pointer">
+              Event
             </h1>
-            <h1 className="border w-[120px] h-[40px] flex justify-center rounded-[20px] items-center text-white md:text-[18px] text-sm hover:bg-[#E6E1FF] hover:text-black font-semibold cursor-pointer">
-              Food
+            </Link>
+           <Link href="/cars">
+           <h1 className="border w-[120px] h-[40px] flex justify-center rounded-[20px] items-center text-white md:text-[18px] text-sm hover:bg-[#E6E1FF] hover:text-black font-semibold cursor-pointer">
+              Rent
             </h1>
-            <h1 className="border w-[120px] h-[40px] flex justify-center rounded-[20px] items-center text-white md:text-[18px] text-sm hover:bg-[#E6E1FF] hover:text-black font-semibold cursor-pointer">
+           </Link>
+           <Link href="/contact">
+           <h1 className="border w-[120px] h-[40px] flex justify-center rounded-[20px] items-center text-white md:text-[18px] text-sm hover:bg-[#E6E1FF] hover:text-black font-semibold cursor-pointer">
               Contact
             </h1>
+           </Link>
           </div>
           <Menu showMenu={showMenu} active={active} />
         </div>

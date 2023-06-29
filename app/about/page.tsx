@@ -3,6 +3,7 @@ import Navbar from "../../components/navbar";
 import Image from "next/image";
 import Footer from "../../components/footer";
 import "../about/about.css";
+import Link from "next/link";
 
 import {
   AiFillFacebook,
@@ -312,15 +313,14 @@ const About = () => {
 
       <section className="bg-[#f2f2f2] py-[40px] flex justify-evenly items-center md:flex-row flex-col joinDiv">
         <div className="">
-          <h2 className="text-center font-semi-bold text-[30px] md:max-w-[500px]">
-            Do you want to be part to team?
-          </h2>
-          <p className="text-[#181818] md:max-w-[500px] text-center p-5">
-            We are a team of Lorem next-next-link, it appears that there might
-            be a typo in the package name. We are a team of Lorem
-            next-next-link, it appears that there might be a typo in the package
-            name.
-          </p>
+          <h2 className="text-center font-bold text-[30px] text-white md:max-w-[500px]">
+          Rent your dream car today from our website and embark on an unforgettable journey.</h2>
+                    <Link
+          href="/cars"
+          className="bg-yellow-500 mt-[30px]  py-[15px] px-[23px] rounded-xl text-white shadow-lg group:hover hover:bg-white hover:text-yellow-500 "
+        >
+          Book Now
+        </Link>
         </div>
 
         {/* <Image

@@ -28,27 +28,27 @@ function Menu({ showMenu, active }: Props) {
             </h1>
           </div>
         </Link>
-        <Link href="about#services">
+        <Link href="/event">
           <div>
             <h1
               className="cursor-pointer hover:underline text-4xl"
               onClick={showMenu}
             >
-              Travel
+              Event
             </h1>
           </div>
         </Link>
-        <Link href="#contact">
+        <Link href="/cars">
           <div>
             <h1
               className="cursor-pointer hover:underline text-3xl"
               onClick={showMenu}
             >
-              Food
+             Rent
             </h1>
           </div>
         </Link>
-        <Link href="#contact">
+        <Link href="/contact">
           <div>
             <h1
               className="cursor-pointer hover:underline text-3xl"

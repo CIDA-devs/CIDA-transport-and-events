@@ -1,5 +1,6 @@
 import hall from "../../components/images/hall.jpg";
 import hall2 from "../../components/images/hall2.jpg";
+import hall3 from "../../components/images/conference.jpg";
 import birthday from "../../components/images/birthday.jpg";
 import seminar from "../../components/images/seminar.jpg";
 import conference from "../../components/images/conference.jpg";
@@ -8,6 +9,8 @@ export const bookings = [
     {
       id: 1,
       img: hall,
+      img1: hall2,
+      img2: hall3,
       hallName: "Red House Hall",
       streetName: "Street Name",
       phoneNumber: "0000 000 000",
@@ -16,6 +19,7 @@ export const bookings = [
       flowerPrice: "2,000",
       decor: "20,000",
       category: "Wedding",
+      numOfDays: 2
     },
     {
       id: 2,
@@ -28,6 +32,7 @@ export const bookings = [
       flowerPrice: "5,000",
       decor: "30,000",
       category: "Wedding",
+      numOfDays: 2
     },
     {
       id: 3,
@@ -40,6 +45,7 @@ export const bookings = [
       flowerPrice: "2,000",
       decor: "20,000",
       category: "Birthday",
+      numOfDays: 2
     },
     {
       id: 4,
@@ -52,6 +58,7 @@ export const bookings = [
       flowerPrice: "5,000",
       decor: "5,000",
       category: "Seminar",
+      numOfDays: 2
     },
     {
       id: 5,
@@ -64,5 +71,6 @@ export const bookings = [
       flowerPrice: "5,000",
       decor: "20,000",
       category: "Conference",
+      numOfDays: 2
     },
   ];
