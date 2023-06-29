@@ -51,7 +51,7 @@ const Contact = () => {
        
       </div>
 
-      
+
 
       <section className="my-[80px] bg-slate-600 py-28">
       <h2 className="text-white/80 text-[30px] text-center font-extrabold text-form mb-7">
@@ -59,17 +59,17 @@ const Contact = () => {
         </h2>
       <div className="  flex justify-center items-center md:flex-row flex-col">
        <Link href="#">
-       <div className="w-[60px] h-[60px] rounded-full shadow-lg flex justify-center items-center mx-6 bg-white">
+       <div className="w-[60px] h-[60px] rounded-full shadow-lg flex justify-center items-center md:mx-6 md:my-0 mb-6 bg-white">
           <AiFillFacebook className="text-[30px] text-center text-gray-500" />
         </div>
        </Link>
        <Link href="#">
-       <div className="w-[60px] h-[60px] rounded-full shadow-lg flex justify-center items-center mx-6 bg-white">
+       <div className="w-[60px] h-[60px] rounded-full shadow-lg flex justify-center items-center md:mx-6 md:my-0 mb-6 bg-white">
         <AiFillInstagram className="text-[40px] text-center text-gray-500" />
         </div>
        </Link>
        <Link href="#">
-       <div className="w-[60px] h-[60px] rounded-full shadow-lg flex justify-center items-center mx-6 bg-white">
+       <div className="w-[60px] h-[60px] rounded-full shadow-lg flex justify-center items-center md:mx-6 md:my-0 bg-white">
         <AiFillTwitterSquare className="text-[40px] text-center text-gray-500" />
         </div>
        </Link>
