@@ -16,6 +16,8 @@ function Booking({ params: { id } }: Props) {
         <div className="text-center text-3xl pt-10">Sorry, Hall not found</div>
       );
     }
+
+    
   
     return (
       <div className="max-w-7xl mx-auto lg:pt-28 pt-5">
@@ -32,9 +34,9 @@ function Booking({ params: { id } }: Props) {
             <div className=" text-lg pt-6">
               <p>Book now on our website to secure your spot and enjoy an unforgettable experience!</p>
             </div>
-            <div className="bg-black text-center w-full text-white mt-5 p-3 text-xl hover:bg-[#FFC107] transition-transform ease-out duration-200 hover:text-black hover:border cursor-pointer rounded-lg">
+            <button className="bg-black text-center w-full text-white mt-5 p-3 text-xl hover:bg-[#FFC107] transition-transform ease-out duration-200 hover:text-black hover:border cursor-pointer rounded-lg">
               Book
-            </div>
+            </button>
           </div>
         </div>
       </div>
@@ -45,7 +47,15 @@ export default Booking
 
 
 
-
+const Modal =()=> {
+  return(
+    <>
+    <div>
+      I am a modal
+    </div>
+    </>
+  )
+}
 
 
 
