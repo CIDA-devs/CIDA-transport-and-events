@@ -57,7 +57,7 @@ function Booking({ params: { id } }: Props) {
         <div className="z-[999px] fixed w[100%] h-[100%] backdrop-blur bg-black/60 top-0 bottom-0 left-0 right-0 flex justify-center items-center flex-col px-[30px] ">
           <FaTimes
             onClick={openModal}
-            className="absolute top-0 right-0 text-[#232323] text-[2rem] my-[20px] mx-[30px] cursor-pointer rounded-full"
+            className="absolute top-0 right-0 text-[#232323] text-[2rem] md:my-[20px] md:mx-[30px] cursor-pointer rounded-full"
           />
 
           <Modal selectedHall={selectedHall} />
@@ -95,12 +95,12 @@ const Modal = (props: {
   const [days, setDays] = useState(props.selectedHall.numOfDays);
   const [category, setCategory] = useState(props.selectedHall.category);
   const [email, setEmail] = useState("");
-  const [time, setTime] = useState("Your Booking Time");
+  const [time, setTime] = useState("");
   const [phone, setPhone] = useState("");
   const [name, setName] = useState("");
   const [lastname, setLastname] = useState("");
   return (
-    <div className="bg-white rounded-md shadow-lg overflow-y-scroll w-[100%] md:w-[800px] px-[35px] py-[35px]">
+    <div className="bg-white rounded-md shadow-lg overflow-auto	 w-[100%] md:w-[800px] md:mx-0 md:my-0 mx-[25px] my-[25px] px-[35px] py-[35px]">
       {/* <FaTimes onClick={openModal}/> */}
       <form id="contactForm">
         <h1 className="md:text-5xl text-4xl font-bold pt-[10px] pb-[10px] lg:text-left text-center">

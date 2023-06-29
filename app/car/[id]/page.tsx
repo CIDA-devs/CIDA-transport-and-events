@@ -86,12 +86,12 @@ const Modal = (props: { selectedCar: { carname: any; numOfDays: any } }) => {
   const [days, setDays] = useState(props.selectedCar.numOfDays);
   // const [category, setCategory] = useState(props.selectedCar.category);
   const [email, setEmail] = useState("");
-  const [time, setTime] = useState("Your Booking Time");
+  const [time, setTime] = useState("");
   const [phone, setPhone] = useState("");
   const [name, setName] = useState("");
   const [lastname, setLastname] = useState("");
   return (
-    <div className="bg-white rounded-md shadow-lg overflow-y-scroll w-[100%] md:w-[800px] px-[35px] py-[35px]">
+    <div className="bg-white rounded-md shadow-lg overflow-auto w-[100%] md:w-[800px] px-[35px] py-[35px]">
       {/* <FaTimes onClick={openModal}/> */}
       <form id="contactForm">
         <h1 className="md:text-5xl text-4xl font-bold pt-[10px] pb-[10px] lg:text-left text-center">
