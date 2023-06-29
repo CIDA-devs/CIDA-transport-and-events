@@ -120,20 +120,19 @@ const Event = () => {
             return (
               <>
                 <div className="md:flex justify-center items-start mb-[70px]">
-                  <Image
+                  <div className="flex justify-center"> <Image
                     src={booking.img}
                     alt="Img"
                     ref={ref}
-                    className={` object-cover mb-[30px] rounded-2xl ${
-                      inView ? "text-form6" : ""
-                    }`}
-                  />
+                    className="{`w-[400px] h-[400px] object-cover mb-[30px] rounded-2xl
+                    "
+                  /></div>
+                 
 
                   <div
-                    ref={ref}
-                    className={`md:ml-[35px] md:w-[35%] ml-0 w-[100%] flex justify-between md:flex-col sm:flex-row ${
-                      inView ? "text-form5" : ""
-                    }`}
+                    
+                    className="{`md:ml-[35px] md:w-[35%] ml-0 w-[100%] flex justify-center gap-10 md:flex-col sm:flex-row 
+                "
                   >
                     <div>
                     <h2 className="font-bold text-[#270159] uppercase text-[22px]">
