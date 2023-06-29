@@ -53,7 +53,7 @@ function Page({ params: { id } }: Props) {
             className="absolute top-0 right-0 text-[#232323] text-[2rem] my-[20px] mx-[30px] cursor-pointer rounded-full"
           />
 
-          <Modal selectedCar={selectedCar} />
+          {/* <Modal selectedCar={selectedCar} /> */}
         </div>
       ) : (
         ""
