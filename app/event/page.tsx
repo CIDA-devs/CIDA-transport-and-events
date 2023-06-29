@@ -15,7 +15,7 @@ import { bookings } from "./bookings";
 import next from "next/types";
 import Footer from "@/components/footer";
 
-const About = () => {
+const Event = () => {
   const [search, setSearch] = useState("");
   const [ref, inView] = useInView({
     triggerOnce: true, // Only trigger the animation once
@@ -74,7 +74,7 @@ const About = () => {
         </section>
       </div>
 
-      <section className="my-32 mx-14 md:flex justify-evenly items-center font-poppins">
+      <section className="my-32 mx-14  md:flex justify-evenly items-center font-poppins">
         <div>
           <h3 className="text-center font-medium text-yellow-500 uppercase text-form5">
             {" "}
@@ -99,7 +99,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="my-24 mx-28">
+      <section className="my-24 md:mx-28 mx-8">
         {bookings
           .filter((item) => {
             if (search == "") {
@@ -131,10 +131,11 @@ const About = () => {
 
                   <div
                     ref={ref}
-                    className={`md: ml-[35px] md:w-[35%] ${
+                    className={`md:ml-[35px] md:w-[35%] ml-0 w-[100%] flex justify-between md:flex-col sm:flex-row ${
                       inView ? "text-form5" : ""
                     }`}
                   >
+                    <div>
                     <h2 className="font-bold text-[#270159] uppercase text-[22px]">
                       {booking.hallName}
                     </h2>
@@ -148,8 +149,11 @@ const About = () => {
                       <FaPhone className="text-yellow-500 mr-1" />
                       {booking.phoneNumber}
                     </p>
+                    </div>
 
-                    <div className=" mt-[30px]">
+                    <div className="flex flex-col">
+
+                    <div className=" md:mt-[30px] sm:mt-0 ">
                       <h2 className="font-medium text-[#270159] uppercase text-[22px]">
                         Rates
                       </h2>
@@ -182,8 +186,10 @@ const About = () => {
                         Book
                       </button>
                     </Link>
+                    </div>
+                    </div>
                   </div>
-                </div>
+                
               </>
             );
           })}
@@ -194,4 +200,7 @@ const About = () => {
   );
 };
 
-export default About;
+export default Event;
+
+
+

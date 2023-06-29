@@ -1,7 +1,7 @@
 export const cars = [
   {
     id: 1,
-    name: "Mercedez Benz  ",
+    carname: "Mercedez Benz  ",
     image: "/MERCEDES-BENZ_GLC-2022_main-removebg-preview.png",
     price: 60,
     details:
@@ -9,7 +9,8 @@ export const cars = [
   },
   {
     id: 2,
-    name: "Mercedez Benz",
+    carname: "Mercedez Benz",
+    numOfDays: 2,
     image: "/MERCEDES-BENZ_GLC-2022_main-removebg-preview.png",
     price: 70,
     details:
@@ -17,7 +18,8 @@ export const cars = [
   },
   {
     id: 3,
-    name: "Mercedez Benz",
+    carname: "Mercedez Benz",
+    numOfDays: 2,
     image: "/MERCEDES-BENZ_GLC-2022_main-removebg-preview.png",
     price: 80,
     details:
@@ -25,7 +27,8 @@ export const cars = [
   },
   {
     id: 4,
-    name: "Mercedez Benz",
+    carname: "Mercedez Benz",
+    numOfDays: 2,
     image: "/MERCEDES-BENZ_GLC-2022_main-removebg-preview.png",
     price: "90",
     details:
@@ -33,7 +36,8 @@ export const cars = [
   },
   {
     id: 5,
-    name: "Mercedez Benz",
+    carname: "Mercedez Benz",
+    numOfDays: 2,
     image: "/MERCEDES-BENZ_GLC-2022_main-removebg-preview.png",
     price: 70,
     details:
@@ -41,7 +45,8 @@ export const cars = [
   },
   {
     id: 6,
-    name: "Mercedez Benz",
+    carname: "Mercedez Benz",
+    numOfDays: 2,
     image: "/MERCEDES-BENZ_GLC-2022_main-removebg-preview.png",
     price: 80,
     details:
