@@ -5,14 +5,10 @@ import Navbar from "../../components/navbar";
 import "../event/event.css";
 import Image from "next/image";
 import Link from "next/link";
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { FaMap, FaMapMarker, FaPhone, FaSearch } from "react-icons/fa";
 import { ImCalendar } from "react-icons/im";
 import { useInView } from "react-intersection-observer";
-
 import { bookings } from "./bookings";
-import next from "next/types";
 import Footer from "@/components/footer";
 
 const Event = () => {
